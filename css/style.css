@@ -1,0 +1,109 @@
+@font-face {
+    font-family:bluu;
+    src: url(../fonts/bluu-next/BluuNext-Bold.otf);
+}
+
+@font-face {
+  font-family:bigelow;
+  src: url(../fonts/BigelowRules-Regular.ttf);
+}
+
+.logo{height:2rem;width:2.5rem;}
+.navbar-brand{padding:0.6rem 1rem;}
+.navbar{background-color: rgb(246,172,109);--bs-navbar-padding-y:0;}
+.navbar-nav li {margin:0 2rem;}
+.navbar-nav .nav-link {font:1.2rem bluu,sans-serif; color: rgb(59,36,56); padding:1rem 1rem;}
+.navbar-nav li:hover .nav-link {
+    background-color: rgb(59,36,56); /* change to desired background color */
+    color: rgb(249,223,174); /* change to desired text color */
+  }
+  .english_lang{height:1.3rem;}
+
+  /* DROPDOWN MENU */
+  .dropdown-menu {
+    background-color:rgb(59,36,56);
+    border: 4px solid rgb(246,172,109);
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+  }
+  
+  .dropdown-item {
+    padding:0.5rem 2rem;
+    color:rgb(249,223,174);
+  }
+  
+  .dropdown-item:hover {
+    background-color:rgb(249,223,174);
+    color:rgb(59,36,56);
+  }
+  
+  /* BACKGROUND IMAGE */
+  body {
+    background-color: rgb(59,36,56); /* using rgb color value */
+    height: 100vh;
+  }
+
+  /* footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color:rgb(246,172,109);
+    text-align: center;
+    display: flex;
+    align-items: center;
+  } */
+
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color:rgb(246,172,109);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* header{margin-top: 8rem;} */
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  header h1{font:2.5rem bluu, sans-serif;color:rgb(249,223,174);}
+  header h1 .hogwarts{font:9rem bigelow, sans-serif;}
+  header h2{font:2.5rem bluu, sans-serif;color:rgb(246,172,109);}
+  
+
+ #copyright{ margin-top: 1rem; color:rgb(59,36,56);}
+ #accessibility {margin-top: 1rem; color:rgb(59,36,56); }
+ #accessibility a{margin-top: 1rem; color:rgb(59,36,56); font-size:1.2rem;padding:1rem;}
+ #accessibility a:hover{color:rgb(161, 77, 3);}
+ .footer .social-icons {
+  padding: 2rem 0.5rem;
+  font-size:1.8rem;
+  color:rgb(59,36,56);
+  margin-top:0.2rem;
+}
+.footer .social-icons:hover{color:rgb(161, 77, 3);}
+ 
+@media only screen and (max-width: 767px){
+footer{  overflow: auto;}
+footer div{width:100%;}
+.footer::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.footer::-webkit-scrollbar-track {
+  background-color: #F5F5F5;
+}
+
+.footer::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+}
