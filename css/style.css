@@ -8,6 +8,11 @@
   src: url(../fonts/BigelowRules-Regular.ttf);
 }
 
+@font-face {
+  font-family:sofiapro;
+  src: url(../fonts/Sofia-font/Sofia-font/SofiaProMedium.ttf);
+}
+
 .logo{height:2rem;width:2.5rem;}
 .navbar-brand{padding:0.6rem 1rem;}
 .navbar{background-color: rgb(246,172,109);--bs-navbar-padding-y:0;}
@@ -79,10 +84,73 @@
   header h1 .hogwarts{font:9rem bigelow, sans-serif;}
   header h2{font:2.5rem bluu, sans-serif;color:rgb(246,172,109);}
   
+  
 
- #copyright{ margin-top: 1rem; color:rgb(59,36,56);}
+  /*log-in and register container*/
+
+  .form-container{
+    text-align: center;
+    position:absolute;
+    width: 40%;
+    height: 85%;
+    top: 10%;
+    left: 30%;
+    padding: 5%;
+    border-radius: 2px;
+    box-shadow: 12px 12px 22px rgba(39, 39, 39, 0.801);
+    background-image: linear-gradient(#F9DFAD, #F6B172);
+  }
+
+  .form-container h1{color: #4D3548;}
+  .form-container p{font: 1.2em sofiapro, sans-serif;}
+
+
+  .form-control{
+    background-color: #4D3548;
+    border-color: #4D3548;
+    color: #F9DFAD;
+    border-radius: 2px;
+    margin-top: 10%;
+    justify-content: center;
+    width: 100%;
+    height: 4em;
+  }
+
+  .form-control:focus{
+    background-color:#C85750;
+    
+    color: #F9DFAD;
+    
+  }
+
+  /*e-mail, username, password placeholders*/
+  ::-webkit-input-placeholder{
+    font: 2em sofiapro, sans-serif;
+    color: #F9DFAD !important;
+    text-align: center;
+  }
+
+  /*log in - register button*/
+  .btn1{
+    border: none;
+    outline: none;
+    background-image: linear-gradient(#C85750, #E46842);
+    height: 4em;
+    width: 40%;
+    font: 1.2em sofiapro, sans-serif;
+    color: #F9DFAD;
+    border-radius: 4px;
+    
+  }
+  
+  .btn1:hover{
+    background-image: linear-gradient(#ae3830, #de5f38);
+    color: #F6B172;
+  }
+
+ #copyright{ margin-top: 1rem; font: 1.2rem sofiapro, sans-serif; color:rgb(59,36,56);}
  #accessibility {margin-top: 1rem; color:rgb(59,36,56); }
- #accessibility a{margin-top: 1rem; color:rgb(59,36,56); font-size:1.2rem;padding:1rem;}
+ #accessibility a{margin-top: 1rem; color:rgb(59,36,56); font: 1.2rem sofiapro, sans-serif; }
  #accessibility a:hover{color:rgb(161, 77, 3);}
  .footer .social-icons {
   padding: 2rem 0.5rem;
