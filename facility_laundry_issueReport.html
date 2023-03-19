@@ -74,37 +74,36 @@
 					</ul>
 				</li>
 			</ul>
-		</div>
+		</div> 
 	</div>
 </nav>
 
 <!-- HEADER -->
 
-<header class="d-flex flex-column justify-content-center align-items-center">
-	<form class='form-container' action='/issue-report' method='post'>
-		<h1 class="text-center">Laundry Room Issue Report</h1>
-		<div class="form-group">
-			<div class="col-md-auto">
-				<p>Email(This is for us to get back to you)</p>
-				<div class="form-group">
-					<div class="col-md-auto">
-						<input name='Email' placeholder='Email address' class="form-control my-4 p-2" type='email'
+<header class="width=10em d-flex flex-column justify-content-center align-items-center">
+		
+		<form class='form-container' action='/issue-report' method='post'>
+			<h1 class="text-start">Laundry Room Issue Report</h1>
+			<div class="form-row">
+			  <div class="form-group col-md-auto">
+				<br>
+				<p class="text-start">Email</p>
+				<input name='Email' placeholder="Dumbledore@hogwarts.ie" class="form-control my-4 p-2" type='email'
 						       required>
-					</div>
-					<p>Issues/suggestions</p>
+							   <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+			  </div>
+			  <div class="form-group col-md-auto">
+				<div class="col-md-12">
 					<div class="form-group">
-						<div class="col-md-auto">
-							<input name='Issue'  class="form-control my-4 p-2" type='text'
-							       required>
-				</div>
+						<br>
+					<p class="text-start">Issues/suggestions</p>
+					 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+				   </div>
 			</div>
-		</div>
 		<div>
-			<input type='submit' class="btn1 mt-3 mb-5" value="Submit">
+			<input type='submit' class="btn1 mt-3 " value="Submit">
 		</div>
 	</form>
-
-	</section>
 
 </header>
 
