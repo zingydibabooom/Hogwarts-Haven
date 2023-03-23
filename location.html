@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOGWARTS HAVEN | Register </title>
+    <title>HOGWARTS HAVEN | LOCATION</title>
     <link rel="icon" href="pictures/logo.png">
     <meta
       name="description"
-      content="Hogwarts Haven - The best student accomodation providers in Dublin."
+      content="Hogwarts Haven - College Green, Dublin 2, Ireland, T: +353 1 896 1000"
     >
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -31,7 +31,7 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container-lg">
           <a class="navbar-brand" href="homepage.html"
-            ><img src="pictures/logo.png" class="logo" alt="logo" height="30"
+            title="Return to homepage"><img src="pictures/logo.png" class="logo" alt="logo" height="30"
           ></a>
           <button
             id="navbar-toggler"
@@ -104,19 +104,19 @@
               </li>
               <!-- HISTORY -->
               <li class="nav-item">
-                <a class="nav-link" href="#">History</a>
+                <a class="nav-link" href="about_us.html">History</a>
               </li>
               <!-- FAQs -->
               <li class="nav-item">
-                <a class="nav-link" href="#">FAQs</a>
+                <a class="nav-link" href="faq.html">FAQs</a>
               </li>
               <!-- REGISTER -->
               <li class="nav-item">
-                <a class="nav-link" href="register.html">Register</a>
+                <a class="nav-link" href="#">Register</a>
               </li>
               <!-- LOGIN -->
               <li class="nav-item">
-                <a class="nav-link" href="login.html">Login</a>
+                <a class="nav-link" href="#">Login</a>
               </li>
               <!-- LANGUAGE -->
               <li class="nav-item dropdown">
@@ -133,7 +133,7 @@
                     alt="british flag"
                     width="20"
                     height="20"
-                  >Eng</a
+                  >&nbsp;Eng</a
                 >
                 <ul
                   class="dropdown-menu"
@@ -143,7 +143,7 @@
                   <li>
                     <a class="dropdown-item" href="#">
                       <img
-                        src="pictures/bb.png"
+                        src="pictures/china.png"
                         class="english_lang"
                         alt="british flag"
                         height="20"
@@ -188,42 +188,67 @@
       </nav>
     </div>
 
-    <!-- HEADER -->
-    <header class="d-flex flex-column justify-content-center align-items-center">  
-        <section class="form col-12 col-sm-6 col-md-3">
-          
-          <form class='form-container' action='/login' method='post'>
-            <h1 class="text-center">Create Account</h1>
-              <div class="form-group">
-                <div class="col-md-auto">
-                  <input name='e-mail' placeholder='E-mail' class="form-control my-4 p-2" required>
+    <!-- MAIN -->
+    <div class="wrap-2">
+      <main>
+        <!-- LOCATION CONTENTS -->
+        <div class="container-lg" id="location_contents">
+            <div class="row first_row">
+                <!-- LEFT COLUMN -->
+              <div class="col-lg-4 col-md-4">
+                <div class="text_contents">
+                    <div class="text_contents_heading">
+                        <h1>LOCATION</h1>
+                    </div>
+                    <!-- Address -->
+                    <div class="address">
+                       <div class="row">
+                        <div class="col-lg-6 col-md-6 postal_address">
+                            <span class="fa-solid fa-location-dot"></span><h2>&nbsp;Postal Address:</h2>
+                        </div>
+                        <div class="col-lg-6 col-md-6 textual_address">
+                            <p>Hogwarts Haven<br> College Green<br>Dublin 2<br>D02 PN40</p>
+                        </div>
+                       </div>
+                    </div>
+                    <!-- Contact Number -->
+                    <div class="contact_number">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 phone_number">
+                               <span class="fa-solid fa-phone"></span><h2>&nbsp;Phone Number:</h2>
+                            </div>
+                            <div class="col-lg-6 col-md-6 numerical_digits">
+                                <a href="#">+353 1 896 1000</a> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Email Address -->
+                    <div class="email_address">
+                       <div class="row">
+                         <div class="col-lg-6 col-md-6 email_text">
+                            <span class="fa-solid fa-envelope"></span><h2>&nbsp;Email Address:</h2>
+                         </div>
+                         <div class="col-lg-6 col-md-6 textual_email">
+                           <a href="#">itservicedesk@tcd.ie</a>
+                         </div>
+                       </div>
+                    </div>
+                    <!-- Get Location Button -->
+                    <div class="location_btn">
+                        <div class="btn"><button onclick="getLocation()" class="get_loc_btn">Get Direction</button></div>
+                        <div class="spinn"><img src="pictures/loader.svg" id="spinner" height="40" width="40" alt="loading"></div>
+                    </div>
+                    </div>
+                </div>
+                    
+                <!-- RIGHT COLUMN -->
+              <div class="col-lg-8 col-md-8">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19093.089508776025!2d-6.234820299999999!3d53.2602199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sie!4v1679290365455!5m2!1sen!2sie" width="736" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>  
               </div>
-    
-              <div class="form-group">
-                <div class="col-md-auto">
-                  <input name='password' placeholder='Password' class="form-control my-4 p-2" type='password' required>
-                </div>
-              </div>
-  
-              <div class="form-group">
-                  <div class="col-md-auto">
-                    <input name='password' placeholder='Repeat Password' class="form-control my-4 p-2" type='password' required>
-                  </div>
-                </div>
-                
-              <div>
-                <input type='submit' class="btn1 mt-3 mb-5" value="Sign Up!">
-              </div>
-    
-              <div class="signup_link">
-                <p>Already have an Account? <a href='login.html'>Log In!</a></p>
-              </div>
-          </form>
-      
-        </section>
-      
-      </header>    
+            </div>
+          </div>
 
         <!-- AI CHATBOT -->
         <div id="chatbot-icon">
@@ -304,6 +329,7 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <!-- CUSTOM JAVASCRIPT -->
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOGWARTS HAVEN | Register </title>
+    <title>HOGWARTS HAVEN | Personal Information </title>
     <link rel="icon" href="pictures/logo.png">
     <meta
       name="description"
@@ -189,37 +189,61 @@
     </div>
 
     <!-- HEADER -->
-    <header class="d-flex flex-column justify-content-center align-items-center">  
-        <section class="form col-12 col-sm-6 col-md-3">
+    <header >  
+        <section >
           
-          <form class='form-container' action='/login' method='post'>
-            <h1 class="text-center">Create Account</h1>
-              <div class="form-group">
-                <div class="col-md-auto">
-                  <input name='e-mail' placeholder='E-mail' class="form-control my-4 p-2" required>
-                </div>  
-              </div>
-    
-              <div class="form-group">
-                <div class="col-md-auto">
-                  <input name='password' placeholder='Password' class="form-control my-4 p-2" type='password' required>
-                </div>
-              </div>
-  
-              <div class="form-group">
-                  <div class="col-md-auto">
-                    <input name='password' placeholder='Repeat Password' class="form-control my-4 p-2" type='password' required>
+            <form class='form-container2' action='/login' method='post'>
+            <h1 class="text-center">Personal Details</h1>
+
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputFirstName">First Name</label>
+                    <input type="text" class="form-control2" id="inputFirstName">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputLastName">Last Name</label>
+                    <input type="text" class="form-control2" id="inputLastName">
                   </div>
                 </div>
-                
-              <div>
-                <input type='submit' class="btn1 mt-3 mb-5" value="Sign Up!">
-              </div>
-    
-              <div class="signup_link">
-                <p>Already have an Account? <a href='login.html'>Log In!</a></p>
-              </div>
-          </form>
+
+                <div class="form-group">
+                  <label for="Gender">Address</label>
+                  <input type="text" class="form-control2" id="inputAddress" placeholder="1234 Main St">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress2">Address 2</label>
+                  <input type="text" class="form-control2" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control2" id="inputCity">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control2">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control2" id="inputZip">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </form>
       
         </section>
       
