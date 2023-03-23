@@ -10,6 +10,12 @@
   src: url(../fonts/BigelowRules-Regular.ttf);
 }
 
+/*Font for text*/
+@font-face {
+  font-family: sofiapro;
+  src: url(../fonts/Sofia-font/Sofia-font/SofiaProMedium.ttf);
+}
+
 body {
   background-color: rgb(59, 36, 56);
 }
@@ -97,7 +103,7 @@ footer {
 
 /* CONTACT US */
 #contact a {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sofiapro, Arial, Helvetica, sans-serif;
   color: rgb(59, 36, 56);
   font-size: 1rem;
   font-weight: bold;
@@ -130,7 +136,7 @@ footer {
 
 #legal li a {
   padding: 0.5rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sofiapro, Arial, Helvetica, sans-serif;
   color: rgb(59, 36, 56);
   font-size: 1rem;
   font-weight: bold;
@@ -144,7 +150,7 @@ footer {
 .copyright {
   text-align: center;
   padding: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sofiapro, Arial, Helvetica, sans-serif;
   color: rgb(59, 36, 56);
   font-size: 0.9rem;
   background-color: rgb(249, 223, 174);
@@ -225,7 +231,7 @@ footer {
 }
 
 #chatbot-body p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sofiapro, Arial, Helvetica, sans-serif;
   font-size: 0.875rem;
 }
 
@@ -347,7 +353,7 @@ footer {
 
 .form-container2 h1{color: #4D3548;}
 .form-container2 p{font: 0.5em sofiapro, sans-serif;}
-.form-container2 label{font: 1.5em sofiapro, sans-serif; color: #4D3548; text-align: left;}
+.form-container2 label{font: 1em sofiapro, sans-serif; color: #4D3548; text-align: left;}
 
 .form-control2{
   background-color: #4D3548;
@@ -413,7 +419,7 @@ footer {
 }
 
 .address p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sofiapro, Arial, Helvetica, sans-serif;
   color: rgb(59, 36, 56);
   margin-left: 1.56rem;
   font-size: 1rem;
@@ -548,7 +554,7 @@ footer {
 
 .header_accordion_button {
   padding: 1.5rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sofiapro, Arial, Helvetica, sans-serif;
   font-size: 1.15rem;
   color: rgb(59, 36, 56);
   font-weight: bold;
@@ -576,14 +582,14 @@ footer {
 }
 
 .nested_buttons {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sofiapro, Arial, Helvetica, sans-serif;
   font-size: 1.08rem;
   font-weight: bold;
   color: rgb(59, 36, 56);
 }
 
 .nested_paragraph {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sofiapro, Arial, Helvetica, sans-serif;
   font-size: 1rem;
   color: black;
   padding: 2rem;
@@ -632,7 +638,7 @@ footer {
 }
 
 .history_text .col-lg-12 p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sofiapro, Arial, Helvetica, sans-serif;
   font-size: 1.08rem;
 }
 
@@ -647,14 +653,14 @@ footer {
 }
 
 .carousel-caption h2 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sofiapro, Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   padding: 0.6rem 0 0.2rem 0;
   margin: 0;
 }
 
 .carousel-caption p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sofiapro, Arial, Helvetica, sans-serif;
   font-size: 1rem;
   padding: 0.2rem 0 0.8rem 0;
   margin: 0;
