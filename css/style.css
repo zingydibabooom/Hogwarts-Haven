@@ -923,20 +923,6 @@ footer {
   top: 15%;
 }
 
-.carousel-inner>.item>img {
-  width: 80%;
-  height: 95%;
-
-}
-
-.d-block {
-  width: 80%;
-  height: 95%;
-  margin-left: 10%;
-  margin-top: 2%;
-}
-
-
 .top-up-icons {
   width: 10%;
   height: 10%;
@@ -1003,6 +989,15 @@ footer {
 }
 
 
+/*global features for carousel*/
+
+
+.d-block {
+  width: 100%;
+  height: 100%;
+}
+
+
 .carousel-control-prev,
 .carousel-control-next {
   width: 20%;
@@ -1012,28 +1007,58 @@ footer {
 
 
 .study-container {
-  margin-top: 2%;
+  margin-top: 1%;
 }
 
-.card {
-  background-color:  rgb(249, 223, 174);
-  /* width:80%;
-  margin-left: 10%;
+.card-study {
+  background-color:  #F6B172;
+  width:75%;
   margin-top:1%;
-  border-radius: 3em;
-  */
+  margin-left:8%;
+  height:85%;
 }
 
-.card-text {
+.card-text-study {
   font: 1.2em bluu, sans-serif;
   color: rgb(59, 36, 56);
+  text-align: center;
 }
 
 #studyRoomIcon {
-  width: 5%;
-  height: 5%;
+  width: 8%;
+  height: 8%;
 }
 
+
+.d-block-study{
+  width:80%;
+  margin-left:10%;
+}
+
+/*gym*/
+.gym-container{
+  height:80%;
+  width:95%;
+  padding:2rem;
+}
+
+
+.card-gym{
+  background-color:  #F6B172;
+  margin-top:5%;
+  height:36%;
+}
+
+.card-text-gym {
+  font: 1.3em bluu, sans-serif;
+  color: rgb(59, 36, 56);
+  text-align: center;
+}
+
+#gymIcon {
+  width: 10%;
+  height: 10%;
+}
 @media screen and (max-width: 850px) {
 
   /* Navigation bar */
@@ -1355,6 +1380,7 @@ footer {
 
   .carousel-caption {
     top: 90%;
+
   }
 }
 
