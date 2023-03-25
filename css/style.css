@@ -916,12 +916,6 @@ footer {
 
 /*laundry*/
 
-.laundry-container {
-  text-align: center;
-  width: 100%;
-  height: 90%;
-  top: 15%;
-}
 
 .top-up-icons {
   width: 10%;
@@ -974,11 +968,12 @@ footer {
   /* border: none;
   outline: none; */
   background-image: linear-gradient(#C85750, #E46842);
-  height: 3em;
-  width: 70%;
-  font: 1.2em sofiapro, sans-serif;
+  height: 2.5em;
+  width: 80%;
+  font: 1em sofiapro, sans-serif;
   color: #F9DFAD;
   border-radius: 4px;
+  margin-left:10%;
 
 }
 
@@ -989,14 +984,14 @@ footer {
 }
 
 
-/*global features for carousel*/
-
-
-.d-block {
-  width: 100%;
-  height: 100%;
+.laundry-container{
+ margin-left:1.5rem;
 }
 
+.d-block-laundry {
+  width:50%;
+  height:50%;
+}
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -1006,19 +1001,19 @@ footer {
 /* studyRoom */
 
 
-.study-container {
+.study-container, .laundry-container {
   margin-top: 1%;
 }
 
-.card-study {
+.card-study, .card-laundry {
   background-color:  #F6B172;
   width:75%;
   margin-top:1%;
   margin-left:8%;
-  height:85%;
+
 }
 
-.card-text-study {
+.card-text-study, .card-text-laundry {
   font: 1.2em bluu, sans-serif;
   color: rgb(59, 36, 56);
   text-align: center;
@@ -1037,28 +1032,61 @@ footer {
 
 /*gym*/
 .gym-container{
-  height:80%;
-  width:95%;
-  padding:2rem;
+  margin-top: 1%;
+  justify-content: center;
+  height:100%;
 }
 
 
-.card-gym{
-  background-color:  #F6B172;
-  margin-top:5%;
-  height:36%;
+.d-block-gym {
+  width:100%;
+  margin-top:1rem;
+  margin-left:10%;
 }
 
-.card-text-gym {
-  font: 1.3em bluu, sans-serif;
-  color: rgb(59, 36, 56);
+.mediacontainer{
+padding:2.5rem;
+}
+
+.video-container{
+  width:100%;
+  margin-left:1.5rem;
+  height:50%;
+}
+
+
+
+.download-video{
+  font-family: sofiapro, sans-serif;
+  font-size:1rem;
+  color: #F9DFAD;
   text-align: center;
 }
 
-#gymIcon {
-  width: 10%;
-  height: 10%;
+.card-gym{
+  background-color:  #F6B172;
+  margin-top:1rem;
+  height:18%;
+  width:80%;
+  margin-left:10%;
 }
+#gym-title{
+  color: rgb(59, 36, 56);
+  text-align: center;
+}
+#openhours{
+  font: 1.2em bluu, sans-serif;
+  color: rgb(59, 36, 56);
+}
+
+#openhours-text{
+  margin-left:10%;
+}
+
+/* #gymIcon {
+  width:30%;
+  height:30%;
+} */
 @media screen and (max-width: 850px) {
 
   /* Navigation bar */
