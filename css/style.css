@@ -969,11 +969,10 @@ footer {
   outline: none; */
   background-image: linear-gradient(#C85750, #E46842);
   height: 2.5em;
-  width: 80%;
+  width: 70%;
   font: 1em sofiapro, sans-serif;
   color: #F9DFAD;
   border-radius: 4px;
-  margin-left:10%;
 
 }
 
@@ -986,26 +985,28 @@ footer {
 
 .laundry-container{
  margin-left:1.5rem;
-}
+} 
 
 .d-block-laundry {
-  width:50%;
-  height:50%;
+width:65%;
+margin-left:20%;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-  width: 20%;
+  width: 15%;
 }
 
 /* studyRoom */
 
 
-.study-container, .laundry-container {
+.study-container {
   margin-top: 1%;
 }
 
-.card-study, .card-laundry {
+
+
+.card-study, .card-laundry, .card-gym {
   background-color:  #F6B172;
   width:75%;
   margin-top:1%;
@@ -1013,7 +1014,7 @@ footer {
 
 }
 
-.card-text-study, .card-text-laundry {
+.card-text-study, .card-text-laundry,.card-text-gym {
   font: 1.2em bluu, sans-serif;
   color: rgb(59, 36, 56);
   text-align: center;
@@ -1039,8 +1040,8 @@ footer {
 
 
 .d-block-gym {
+  margin-top:2rem;
   width:100%;
-  margin-top:1rem;
   margin-left:10%;
 }
 
@@ -1050,10 +1051,10 @@ padding:2.5rem;
 
 .video-container{
   width:100%;
-  margin-left:1.5rem;
-  height:50%;
+  margin-left:3.5rem;
+  /* height:50%; */
+  margin-top: 1rem;
 }
-
 
 
 .download-video{
@@ -1063,25 +1064,7 @@ padding:2.5rem;
   text-align: center;
 }
 
-.card-gym{
-  background-color:  #F6B172;
-  margin-top:1rem;
-  height:18%;
-  width:80%;
-  margin-left:10%;
-}
-#gym-title{
-  color: rgb(59, 36, 56);
-  text-align: center;
-}
-#openhours{
-  font: 1.2em bluu, sans-serif;
-  color: rgb(59, 36, 56);
-}
 
-#openhours-text{
-  margin-left:10%;
-}
 
 /* #gymIcon {
   width:30%;
