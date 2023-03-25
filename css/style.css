@@ -49,6 +49,17 @@ body {
   color: rgb(249, 223, 174);
 }
 
+
+.dropdown-item:hover {
+  background-color: rgb(249, 223, 174);
+  color: rgb(59, 36, 56);
+}
+
+/* HEADER */
+header {
+  height: 100vh;
+}
+
 /* DROPDOWN MENU */
 .dropdown-menu {
   background-color: rgb(65, 30, 33);
@@ -80,6 +91,11 @@ header h1 {
 
 header h1 .hogwarts {
   font: 9rem bigelow, sans-serif;
+}
+
+header h2 {
+  font: 2.5rem bluu, sans-serif;
+  color: rgb(246, 172, 109);
 }
 
 header h2 {
@@ -291,7 +307,7 @@ footer {
 
 .form-container h1 {
   color: #4D3548;
-  font-family: bluu,;
+  font-family: bluu, ;
 }
 
 .form-container p {
@@ -684,11 +700,6 @@ footer {
 }
 
 
-
-
-
-
-
 /* MEDIA QUERIES FOR MORE RESPONSIVENESS WITH REDUCING SCREEN SIZE */
 @media screen and (max-width: 1220px) {
 
@@ -920,7 +931,7 @@ footer {
 .top-up-icons {
   width: 10%;
   height: 10%;
-  margin-left:15%;
+  margin-left: 15%;
 }
 
 .form-container3 {
@@ -939,7 +950,7 @@ footer {
 .form-container3 h1 {
   text-align: center;
   color: #4D3548;
-  font-family: bluu,;
+  font-family: bluu, ;
 }
 
 .form-container3 p {
@@ -983,13 +994,22 @@ footer {
 }
 
 
-.laundry-container{
- margin-left:1.5rem;
-} 
+.laundry-container {
+  margin-left: 1.5rem;
+}
+
+.history_text .col-lg-12 {
+  padding: 1.5rem;
+}
 
 .d-block-laundry {
-width:65%;
-margin-left:20%;
+  width: 65%;
+  margin-left: 20%;
+}
+
+.history_text .col-lg-12 p {
+  font-family: sofiapro, Arial, Helvetica, sans-serif;
+  font-size: 1.08rem;
 }
 
 .carousel-control-prev,
@@ -1006,15 +1026,25 @@ margin-left:20%;
 
 
 
-.card-study, .card-laundry, .card-gym {
-  background-color:  #F6B172;
-  width:75%;
-  margin-top:1%;
-  margin-left:8%;
-
+.card-study,
+.card-laundry,
+.card-gym {
+  background-color: #F6B172;
+  width: 75%;
+  margin-top: 1%;
+  margin-left: 8%;
 }
 
-.card-text-study, .card-text-laundry,.card-text-gym {
+.carousel-caption p {
+  font-family: sofiapro, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding: 0.2rem 0 0.8rem 0;
+  margin: 0;
+}
+
+.card-text-study,
+.card-text-laundry,
+.card-text-gym {
   font: 1.2em bluu, sans-serif;
   color: rgb(59, 36, 56);
   text-align: center;
@@ -1026,69 +1056,24 @@ margin-left:20%;
 }
 
 
-.d-block-study{
-  width:80%;
-  margin-left:10%;
-}
-
-/*gym*/
-.gym-container{
-  margin-top: 1%;
-  justify-content: center;
-  height:100%;
-}
-
-
-.d-block-gym {
-  margin-top:2rem;
-  width:100%;
-  margin-left:10%;
-}
-
-.mediacontainer{
-padding:2.5rem;
-}
-
-.video-container{
-  width:100%;
-  margin-left:3.5rem;
-  /* height:50%; */
-  margin-top: 1rem;
-}
-
-
-.download-video{
-  font-family: sofiapro, sans-serif;
-  font-size:1rem;
-  color: #F9DFAD;
-  text-align: center;
-}
 
 
 
-/* #gymIcon {
-  width:30%;
-  height:30%;
-} */
-@media screen and (max-width: 850px) {
+/* MEDIA QUERIES FOR MORE RESPONSIVENESS WITH REDUCING SCREEN SIZE */
+@media screen and (max-width: 1220px) {
 
-  /* Navigation bar */
+  /* NAVIGATION BAR */
+  .navbar-nav .nav-item {
+    margin: 0 0.8rem;
+  }
+
+  .dropdown-item {
+    padding: 0.2rem 2rem;
+    color: rgb(249, 223, 174);
+  }
+
   #language_dropdown {
-    margin-left: 0;
-  }
-
-
-  /*For Iphone 12 pro landscape mode and ipad Mini portrait mode*/
-  #chatbot-body {
-    height: 13.5rem;
-  }
-
-  #chatbot-container {
-    width: 45rem;
-  }
-
-  #chatbot-input {
-    width: 40rem;
+    margin-left: -4rem;
   }
 
   .dropdown-item {
@@ -1097,348 +1082,483 @@ padding:2.5rem;
 
   /* LOCATION PAGE */
 
-  #location_contents .first_row {
-    align-items: center;
-    height: 50rem;
-  }
-
-  #location_contents .col-lg-4 h1 {
-    font-size: 1rem;
-  }
-
-  /* Address */
-  .address span {
-    font-size: 0.9rem;
-  }
-
-  .address .col-lg-6 h2 {
-    font-size: 0.8rem;
-  }
-
-  .address p {
-    font-size: 0.7rem;
-  }
-
-  /* Contact Number */
-  .contact_number span {
-    font-size: 0.8rem;
-  }
-
-  .contact_number h2 {
-    font-size: 0.8rem;
-  }
-
-  .contact_number a {
-    font-size: 0.7rem;
-  }
-
-  /* Email Address */
-  .email_address span {
-    font-size: 0.8rem;
-  }
-
-  .email_address h2 {
-    font-size: 0.8rem;
-  }
-
-  .email_address a {
-    font-size: 0.7rem;
-  }
-
-  /* GET LOCATION BUTTON */
-
-  #spinner {
-    height: 2rem;
-  }
-
-  .get_loc_btn {
-    padding: 0.7rem 0.8rem;
-    font: 0.9rem bluu, sans-serif;
-  }
-
-  /* Some extra modifications to adjust the location menu */
   .text_contents {
-    padding: 0.5rem;
-    height: 25rem;
+    height: 29rem;
   }
 
   .map iframe {
-    width: 100%;
-    height: 25rem;
+    height: 29rem;
   }
+
 
   #location_contents .col-lg-4 h1 {
-    padding: 0.4rem;
-  }
-
-  #location_contents .address {
-    margin-top: 2.2rem;
-  }
-
-  .address .postal_address {
-    padding: 0 5px;
-  }
-
-  .address .textual_address {
-    padding: 0 5px;
-  }
-
-  .address .textual_address p {
-    margin-left: 10px;
-  }
-
-  .contact_number .phone_number {
-    padding: 0 5px;
-    text-align: center;
-  }
-
-  .contact_number .numerical_digits {
-    padding: 0 5px;
-  }
-
-  .contact_number .numerical_digits a {
-    margin-left: 10px;
-  }
-
-  .email_address .email_text {
-    padding: 0 5px;
-    text-align: center;
-  }
-
-  .email_address .textual_email {
-    padding: 0 5px;
-  }
-
-  .email_address .textual_email a {
-    margin-left: 0px;
-  }
-
-  /* -------------------------HISTORY SECTION------------------------------------ */
-
-  .carousel-caption h2 {
-    font-size: 1rem;
-    padding: 0.4rem 0 0.1rem 0;
-  }
-
-  .carousel-caption p {
-    font-size: 0.8rem;
-    padding: 0.1rem 0 0.4rem 0;
-  }
-
-}
-
-
-@media screen and (max-width: 767px) {
-
-  /*Landscape mode of a normal mobile*/
-  #chatbot-body {
-    height: 13rem;
-  }
-
-  #chatbot-container {
-    width: 43.5rem;
-  }
-
-  #chatbot-input {
-    width: 39rem;
-  }
-
-  .dropdown-item {
-    padding: 0.9rem 2rem;
-  }
-
-  /* LOCATION PAGE */
-  #location_contents .first_row {
-    height: 60rem;
-  }
-
-  #location_contents .col-lg-4 h1 {
-    font-size: 1.4rem;
-  }
-
-  #location_contents .col-lg-4 {
-    padding: 1.25rem;
+    font: 1.3rem bluu, sans-serif;
   }
 
   /* Address */
-
-  #location_contents .address {
-    margin-top: 0.9rem;
-  }
-
   .address span {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    color: rgb(59, 36, 56);
   }
 
   .address .col-lg-6 h2 {
-    font-size: 1.15rem;
+    font: 1rem bluu, sans-serif;
   }
 
   .address p {
-    font-size: 0.9rem;
-    font-weight: normal;
+    font-size: 0.8rem;
+    font-weight: bold;
   }
 
   /* Contact Number */
-  .contact_number {
-    margin-top: 0rem;
-  }
-
   .contact_number span {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 
   .contact_number h2 {
-    font-size: 1.15rem;
+    font-size: 1rem;
   }
 
   .contact_number a {
-    font-size: 0.9rem;
-    font-weight: normal;
-  }
-
-  .numerical_digits {
-    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
   }
 
   /* Email Address */
-  .email_address {
-    margin-top: 0.9rem;
-  }
-
   .email_address span {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .email_address h2 {
-    font-size: 1.15rem;
+    font-size: 1rem;
   }
 
   .email_address a {
-    font-size: 0.9rem;
-    font-weight: normal;
-  }
-
-  .email_address .textual_email {
-    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
   }
 
   /* GET LOCATION BUTTON */
-
   .get_loc_btn {
-    margin-top: -1rem;
-    padding: 0.7rem 0.9rem;
-    font: 0.9rem bluu, sans-serif;
-  }
-
-  /* -------------------------HISTORY SECTION------------------------------------ */
-
-  .carousel-caption h2 {
-    font-size: 0.9rem;
-    padding: 0.2 0;
-  }
-
-  .carousel-caption p {
-    font-size: 0.7rem;
-    padding: 0;
-  }
-
-}
-
-
-@media screen and (max-width: 750px) {
-  #chatbot-body {
-    height: 21.875rem;
-  }
-
-  #chatbot-container {
-    width: 20.5rem;
-  }
-
-  #chatbot-input {
-    width: 16rem;
-  }
-
-  #chatbot-icon {
-    right: 1rem;
-  }
-
-  header h1 {
-    font-size: 1.8rem;
-  }
-
-  header h1 .hogwarts {
-    font-size: 7rem;
-  }
-
-  header h2 {
-    font-size: 1.8rem;
-  }
-
-  .dropdown-item {
-    padding: 0.9rem 2rem;
-  }
-
-  /* -------------------------HISTORY SECTION------------------------------------ */
-
-  .carousel-caption h2 {
-    font-size: 0.7rem;
-  }
-
-  .carousel-caption p {
-    display: none
-  }
-
-  .carousel-caption {
-    top: 90%;
-
-  }
-}
-
-@media screen and (max-width: 467px) {
-
-  /*Portrait mode of a normal mobile */
-  #chatbot-body {
-    height: 21.875rem;
-  }
-
-  #chatbot-container {
-    width: 20.5rem;
-  }
-
-  #chatbot-input {
-    width: 16rem;
-  }
-
-  #chatbot-icon {
-    right: 1rem;
-  }
-
-  header h1 {
-    font-size: 1.8rem;
-  }
-
-  header h1 .hogwarts {
-    font-size: 7rem;
-  }
-
-  header h2 {
-    font-size: 1.8rem;
-  }
-
-  .dropdown-item {
-    padding: 0.9rem 2rem;
+    padding: 0.8rem 1rem;
+    font: 1rem bluu, sans-serif;
   }
 
 
-  /* -------------------------HISTORY SECTION------------------------------------ */
-
-  .carousel-caption h2 {
-    font-size: 0.6rem;
-    padding: 0.1rem 0 0 0;
+  .d-block-study {
+    width: 80%;
+    margin-left: 10%;
   }
 
-  .all_hogwarts_images {
+  /*gym*/
+  .gym-container {
+    margin-top: 1%;
+    justify-content: center;
+    height: 100%;
+  }
+
+
+  .d-block-gym {
+    margin-top: 2rem;
     width: 100%;
+    margin-left: 10%;
+  }
+
+  .mediacontainer {
+    padding: 2.5rem;
+  }
+
+  .video-container {
+    width: 100%;
+    margin-left: 3.5rem;
+    /* height:50%; */
+    margin-top: 1rem;
+  }
+
+
+  .download-video {
+    font-family: sofiapro, sans-serif;
+    font-size: 1rem;
+    color: #F9DFAD;
+    text-align: center;
+  }
+
+
+
+  /* #gymIcon {
+  width:30%;
+  height:30%;
+} */
+  @media screen and (max-width: 850px) {
+
+    /* Navigation bar */
+    #language_dropdown {
+      margin-left: 0;
+    }
+
+
+    /*For Iphone 12 pro landscape mode and ipad Mini portrait mode*/
+    #chatbot-body {
+      height: 13.5rem;
+    }
+
+    #chatbot-container {
+      width: 45rem;
+    }
+
+    #chatbot-input {
+      width: 40rem;
+    }
+
+    .dropdown-item {
+      padding: 0.9rem 2rem;
+    }
+
+    /* LOCATION PAGE */
+
+    #location_contents .first_row {
+      align-items: center;
+      height: 50rem;
+    }
+
+    #location_contents .col-lg-4 h1 {
+      font-size: 1rem;
+    }
+
+    /* Address */
+    .address span {
+      font-size: 0.9rem;
+    }
+
+    .address .col-lg-6 h2 {
+      font-size: 0.8rem;
+    }
+
+    .address p {
+      font-size: 0.7rem;
+    }
+
+    /* Contact Number */
+    .contact_number span {
+      font-size: 0.8rem;
+    }
+
+    .contact_number h2 {
+      font-size: 0.8rem;
+    }
+
+    .contact_number a {
+      font-size: 0.7rem;
+    }
+
+    /* Email Address */
+    .email_address span {
+      font-size: 0.8rem;
+    }
+
+    .email_address h2 {
+      font-size: 0.8rem;
+    }
+
+    .email_address a {
+      font-size: 0.7rem;
+    }
+
+    /* GET LOCATION BUTTON */
+
+    #spinner {
+      height: 2rem;
+    }
+
+    .get_loc_btn {
+      padding: 0.7rem 0.8rem;
+      font: 0.9rem bluu, sans-serif;
+    }
+
+    /* Some extra modifications to adjust the location menu */
+    .text_contents {
+      padding: 0.5rem;
+      height: 25rem;
+    }
+
+    .map iframe {
+      width: 100%;
+      height: 25rem;
+    }
+
+    #location_contents .col-lg-4 h1 {
+      padding: 0.4rem;
+    }
+
+    #location_contents .address {
+      margin-top: 2.2rem;
+    }
+
+    .address .postal_address {
+      padding: 0 5px;
+    }
+
+    .address .textual_address {
+      padding: 0 5px;
+    }
+
+    .address .textual_address p {
+      margin-left: 10px;
+    }
+
+    .contact_number .phone_number {
+      padding: 0 5px;
+      text-align: center;
+    }
+
+    .contact_number .numerical_digits {
+      padding: 0 5px;
+    }
+
+    .contact_number .numerical_digits a {
+      margin-left: 10px;
+    }
+
+    .email_address .email_text {
+      padding: 0 5px;
+      text-align: center;
+    }
+
+    .email_address .textual_email {
+      padding: 0 5px;
+    }
+
+    .email_address .textual_email a {
+      margin-left: 0px;
+    }
+
+    /* -------------------------HISTORY SECTION------------------------------------ */
+
+    .carousel-caption h2 {
+      font-size: 1rem;
+      padding: 0.4rem 0 0.1rem 0;
+    }
+
+    .carousel-caption p {
+      font-size: 0.8rem;
+      padding: 0.1rem 0 0.4rem 0;
+    }
+
+  }
+
+
+  @media screen and (max-width: 767px) {
+
+    /*Landscape mode of a normal mobile*/
+    #chatbot-body {
+      height: 13rem;
+    }
+
+    #chatbot-container {
+      width: 43.5rem;
+    }
+
+    #chatbot-input {
+      width: 39rem;
+    }
+
+    .dropdown-item {
+      padding: 0.9rem 2rem;
+    }
+
+    /* LOCATION PAGE */
+    #location_contents .first_row {
+      height: 60rem;
+    }
+
+    #location_contents .col-lg-4 h1 {
+      font-size: 1.4rem;
+    }
+
+    #location_contents .col-lg-4 {
+      padding: 1.25rem;
+    }
+
+    /* Address */
+
+    #location_contents .address {
+      margin-top: 0.9rem;
+    }
+
+    .address span {
+      font-size: 1.2rem;
+    }
+
+    .address .col-lg-6 h2 {
+      font-size: 1.15rem;
+    }
+
+    .address p {
+      font-size: 0.9rem;
+      font-weight: normal;
+    }
+
+    /* Contact Number */
+    .contact_number {
+      margin-top: 0rem;
+    }
+
+    .contact_number span {
+      font-size: 1.2rem;
+    }
+
+    .contact_number h2 {
+      font-size: 1.15rem;
+    }
+
+    .contact_number a {
+      font-size: 0.9rem;
+      font-weight: normal;
+    }
+
+    .numerical_digits {
+      text-align: center;
+    }
+
+    /* Email Address */
+    .email_address {
+      margin-top: 0.9rem;
+    }
+
+    .email_address span {
+      font-size: 1.2rem;
+    }
+
+    .email_address h2 {
+      font-size: 1.15rem;
+    }
+
+    .email_address a {
+      font-size: 0.9rem;
+      font-weight: normal;
+    }
+
+    .email_address .textual_email {
+      text-align: center;
+    }
+
+    /* GET LOCATION BUTTON */
+
+    .get_loc_btn {
+      margin-top: -1rem;
+      padding: 0.7rem 0.9rem;
+      font: 0.9rem bluu, sans-serif;
+    }
+
+    /* -------------------------HISTORY SECTION------------------------------------ */
+
+    .carousel-caption h2 {
+      font-size: 0.9rem;
+      padding: 0.2 0;
+    }
+
+    .carousel-caption p {
+      font-size: 0.7rem;
+      padding: 0;
+    }
+
+  }
+
+
+  @media screen and (max-width: 750px) {
+    #chatbot-body {
+      height: 21.875rem;
+    }
+
+    #chatbot-container {
+      width: 20.5rem;
+    }
+
+    #chatbot-input {
+      width: 16rem;
+    }
+
+    #chatbot-icon {
+      right: 1rem;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    header h1 .hogwarts {
+      font-size: 7rem;
+    }
+
+    header h2 {
+      font-size: 1.8rem;
+    }
+
+    .dropdown-item {
+      padding: 0.9rem 2rem;
+    }
+
+    /* -------------------------HISTORY SECTION------------------------------------ */
+
+    .carousel-caption h2 {
+      font-size: 0.7rem;
+    }
+
+    .carousel-caption p {
+      display: none
+    }
+
+    .carousel-caption {
+      top: 90%;
+
+    }
+  }
+
+  @media screen and (max-width: 467px) {
+
+    /*Portrait mode of a normal mobile */
+    #chatbot-body {
+      height: 21.875rem;
+    }
+
+    #chatbot-container {
+      width: 20.5rem;
+    }
+
+    #chatbot-input {
+      width: 16rem;
+    }
+
+    #chatbot-icon {
+      right: 1rem;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    header h1 .hogwarts {
+      font-size: 7rem;
+    }
+
+    header h2 {
+      font-size: 1.8rem;
+    }
+
+    .dropdown-item {
+      padding: 0.9rem 2rem;
+    }
+
+
+    /* -------------------------HISTORY SECTION------------------------------------ */
+
+    .carousel-caption h2 {
+      font-size: 0.6rem;
+      padding: 0.1rem 0 0 0;
+    }
+
+    .all_hogwarts_images {
+      width: 100%;
+    }
   }
 }
