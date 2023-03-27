@@ -915,7 +915,7 @@ footer {
 
 
 
-/*laundry*/
+/*------------------------------------laundry----------------------------------------*/
 
 
 .top-up-icons {
@@ -925,13 +925,12 @@ footer {
 }
 
 .form-container3 {
-
   position: absolute;
   width: 50%;
-  height: 85%;
+  height: 90%;
   top: 15%;
   left: 25%;
-  padding: 5%;
+  padding:2%;
   border-radius: 2px;
   box-shadow: 12px 12px 22px rgba(39, 39, 39, 0.801);
   background-image: linear-gradient(#F9DFAD, #F6B172);
@@ -988,6 +987,12 @@ footer {
  margin-left:1.5rem;
 } 
 
+.text-container{
+  width:60%;
+  margin-left:20%;
+  margin-right:20%;
+}
+
 .d-block-laundry {
 width:65%;
 margin-left:20%;
@@ -995,10 +1000,10 @@ margin-left:20%;
 
 .carousel-control-prev,
 .carousel-control-next {
-  width: 15%;
+width:15%;
 }
 
-/* studyRoom */
+/*-----------------------------------------study room --------------------------*/
 
 
 .study-container {
@@ -1032,29 +1037,26 @@ margin-left:20%;
   margin-left:10%;
 }
 
-/*gym*/
+/*------------------------------------------gym----------------------------*/
 .gym-container{
   margin-top: 1%;
   justify-content: center;
   height:100%;
 }
 
-
 .d-block-gym {
   margin-top:2rem;
   width:100%;
-  margin-left:10%;
 }
 
 .mediacontainer{
 padding:2.5rem;
+margin-left:10%;
 }
 
-.video-container{
-  width:100%;
-  margin-left:3.5rem;
-  /* height:50%; */
-  margin-top: 1rem;
+
+video{
+  margin-top:2%;
 }
 
 
@@ -1067,10 +1069,6 @@ padding:2.5rem;
 
 
 
-/* #gymIcon {
-  width:30%;
-  height:30%;
-} */
 @media screen and (max-width: 850px) {
 
   /* Navigation bar */

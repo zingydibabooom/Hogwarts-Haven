@@ -123,27 +123,33 @@
 							<img class="top-up-icons" src="./pictures/icons_laundryRoom/paypal.png" alt="paypal.png">
 						</div>
 					</div>
-					<div class="form-group col-md-auto">
+					<div class="form-group col-md-12">
 								<p class="text-start">Payment Details</p>
 								<label for="cname">Name on Card</label>
 								<input name='cname' placeholder="Albus Dumbledore" class="form-control my-4 p-2"
 								type='email' required>
 								<label for="ccnum">Credit card number</label>
-								<input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-							</div>
+								<input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" class="form-control my-4 p-2"
+								type='cardnumber' required>
+								<div class ="row">
+									<div class="col-dm-6">
+										<label for="expmonth">Exp Date</label>
+										<input class="inputCard form-control my-4 p-2" name="expiry" id="expiry" type="month" required />
+									</div>
+									<div class="col-dm-6">
+									    <label for="cvv">CVV</label>
+										<input class="form-control m4-2 p-2" type='cvv' required id="cvv" name="cvv" placeholder="352">
+									</div>
+								</div>
+								
+							<div class="col-dm-12">
 							<br>
-							<br>
-							<div class="form-group col-dm-12">
-								<label for="expmonth">Exp Date</label>
-								<input class="inputCard" name="expiry" id="expiry" type="month" required />
-								<label for="cvv">CVV</label>
-								<input class="text" id="cvv" name="cvv" placeholder="352">
+							<input type='submit' class="btn2" value="Top up now!">
 							</div>
 						</div>
 					</div>
 					<div>
-						<br>
-						<input type='submit' class="btn2" value="Top up now!">
+					</div>
 					</div>
 				</form>
 			</header>
