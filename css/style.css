@@ -1,0 +1,1445 @@
+/* Font for navigation headings */
+/* Font for navigation headings */
+@font-face {
+  font-family: bluu;
+  src: url(../fonts/bluu-next/BluuNext-Bold.otf);
+}
+
+/* Font for h1 only */
+@font-face {
+  font-family: bigelow;
+  src: url(../fonts/BigelowRules-Regular.ttf);
+}
+
+/*Font for text*/
+@font-face {
+  font-family: sofiapro;
+  src: url(../fonts/Sofia-font/Sofia-font/SofiaProMedium.ttf);
+}
+
+body {
+  background-color: rgb(59, 36, 56);
+}
+
+/*NAVIGATION BAR*/
+.logo {
+  height: 2rem;
+}
+
+.navbar-brand {
+  padding: 0.6rem;
+}
+
+.navbar {
+  background-color: rgb(246, 172, 109);
+  --bs-navbar-padding-y: 0;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 1.45rem;
+}
+
+.navbar-nav .nav-link {
+  font: 1.2rem bluu, sans-serif;
+  color: rgb(59, 36, 56);
+  padding: 1.34rem;
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+  background-color: rgb(65, 30, 33);
+  color: rgb(249, 223, 174);
+}
+
+/* DROPDOWN MENU */
+.dropdown-menu {
+  background-color: rgb(65, 30, 33);
+  ;
+  border: 0.125rem solid rgb(209, 108, 20);
+  box-shadow: 0px 0.1875rem 0.625rem rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-item {
+  font: rem bluu, sans-serif;
+  padding: 0.5rem 2rem;
+  color: rgb(249, 223, 174);
+}
+
+.dropdown-item:hover {
+  background-color: rgb(249, 223, 174);
+  color: rgb(59, 36, 56);
+}
+
+/* HEADER */
+header {
+  height: 100vh;
+}
+
+header h1 {
+  font: 2.5rem bluu, sans-serif;
+  color: rgb(249, 223, 174);
+}
+
+header h1 .hogwarts {
+  font: 9rem bigelow, sans-serif;
+}
+
+header h2 {
+  font: 2.5rem bluu, sans-serif;
+  color: rgb(246, 172, 109);
+}
+
+/* FOOTER */
+footer {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgb(246, 172, 109);
+  justify-content: center;
+}
+
+#footer_contents {
+  margin-top: 1rem;
+}
+
+/* CONTACT US */
+#contact a {
+  font-family: sofiapro, Arial, Helvetica, sans-serif;
+  color: rgb(59, 36, 56);
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+#contact a:hover {
+  color: rgb(191, 81, 84);
+}
+
+/* SOCIAL MEDIA ICONS */
+#media_icons li {
+  margin-left: 0.5rem;
+}
+
+#media_icons a {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: rgb(59, 36, 56);
+}
+
+#media_icons a:hover {
+  color: rgb(191, 81, 84);
+}
+
+/* LEGAL POLICIES */
+#legal li {
+  margin-top: 0.6rem;
+}
+
+#legal li a {
+  padding: 0.5rem;
+  font-family: sofiapro, Arial, Helvetica, sans-serif;
+  color: rgb(59, 36, 56);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#legal li a:hover {
+  color: rgb(191, 81, 84);
+}
+
+/* COPYRIGHT. ALL RIGHTS RESERVED */
+.copyright {
+  text-align: center;
+  padding: 1rem;
+  font-family: sofiapro, Arial, Helvetica, sans-serif;
+  color: rgb(59, 36, 56);
+  font-size: 0.9rem;
+  background-color: rgb(249, 223, 174);
+}
+
+
+/* AI CHATBOT DETAILS*/
+#chatbot-icon {
+  position: fixed;
+  bottom: 3rem;
+  right: 1.8rem;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+#chatbot-icon .text {
+  position: absolute;
+  top: 0.625rem;
+  right: 0.35rem;
+  font: 1rem bluu, sans-serif;
+  color: rgb(65, 30, 33);
+}
+
+#message_icon {
+  font-size: 3rem;
+  color: rgb(228, 104, 66);
+}
+
+.dot {
+  height: 0.8rem;
+  width: 0.8rem;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: -0.25rem;
+  right: -0.34rem;
+}
+
+#chatbot-container {
+  display: none;
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  z-index: 9999;
+  width: 21.875rem;
+  border: 0.0625 solid #ccc;
+  border-radius: 0.3125rem;
+}
+
+#chatbot-header {
+  background-color: rgb(228, 104, 66);
+  color: rgb(59, 36, 56);
+  padding: 0.625rem;
+  border-top-left-radius: 0.3125rem;
+  border-top-right-radius: 0.3125rem;
+}
+
+#chatbot-header h3 {
+  font: 1.5rem bluu, sans-serif;
+  display: inline;
+  margin-left: 2.5rem;
+
+}
+
+#chatbot-header span {
+  padding: 0.625rem 0.75rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+#chatbot-body {
+  height: 21.875rem;
+  padding: 0.625rem;
+  overflow-y: auto;
+  background-color: rgb(249, 223, 174);
+  color: rgb(59, 36, 56);
+}
+
+#chatbot-body p {
+  font-family: sofiapro, Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+}
+
+#chatbot-body .welcome {
+  background-color: rgb(246, 172, 109);
+  border-radius: 0.625rem;
+  padding: 0.625rem;
+  border-radius: 0.9375rem 0.9375rem 0.9375rem 0;
+}
+
+#chatbot-footer {
+  background-color: rgb(228, 104, 66);
+  padding: 0.625rem;
+  border-bottom-left-radius: 0.3125rem;
+  border-bottom-right-radius: 0.3125rem;
+}
+
+#chatbot-input {
+  width: 17.5rem;
+  padding: 0.3125rem;
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid #ccc;
+  margin-right: 0.1875rem;
+  background-color: rgb(249, 223, 174);
+}
+
+#chatbot-send {
+  padding: 0.4375rem 0.625rem;
+  border-radius: 0.3125rem;
+  background-color: rgb(59, 36, 56);
+  color: rgb(246, 172, 109);
+  border: none;
+  cursor: pointer;
+  margin-left: 0.25rem;
+}
+
+#chatbot-send:hover {
+  background-color: rgb(246, 172, 109);
+  color: rgb(59, 36, 56);
+}
+
+
+/*--------------------------------------------LOG-IN and REGISTER---------------------------------------------*/
+
+.form-container {
+  text-align: center;
+  position: absolute;
+  width: 40%;
+  height: 85%;
+  top: 15%;
+  left: 30%;
+  padding: 5%;
+  border-radius: 2px;
+  box-shadow: 12px 12px 22px rgba(39, 39, 39, 0.801);
+  background-image: linear-gradient(#F9DFAD, #F6B172);
+}
+
+.form-container h1 {
+  color: #4D3548;
+  font-family: bluu,;
+}
+
+.form-container p {
+  font-family: sofiapro, sans-serif;
+  font-size: 1.2em;
+}
+
+
+.form-control {
+  background-color: #4D3548;
+  border-color: #4D3548;
+  color: #F9DFAD;
+  border-radius: 2px;
+  margin-top: 10%;
+  justify-content: center;
+  width: 100%;
+  height: 4em;
+}
+
+.form-control:focus {
+  background-color: #C85750;
+  color: #F9DFAD;
+}
+
+/*e-mail, username, password placeholders*/
+::-webkit-input-placeholder {
+  font: 1em sofiapro, sans-serif;
+  color: #F9DFAD !important;
+  text-align: center;
+}
+
+/*log in - register button*/
+.btn1 {
+  border: none;
+  outline: none;
+  background-image: linear-gradient(#C85750, #E46842);
+  height: 4em;
+  width: 40%;
+  font: 1.2em sofiapro, sans-serif;
+  color: #F9DFAD;
+  border-radius: 4px;
+
+}
+
+.btn1:hover {
+  background-image: linear-gradient(#ae3830, #de5f38);
+  color: #F6B172;
+}
+
+
+
+/*-----------------------------------------------PERSONAL INFO---------------------------------------------------*/
+
+.form-container2 {
+  text-align: left;
+  position: absolute;
+  width: 70%;
+  height: 50em;
+  top: 15%;
+  left: 15%;
+  padding: 5%;
+  border-radius: 2px;
+  box-shadow: 12px 12px 22px rgba(39, 39, 39, 0.801);
+  background-image: linear-gradient(#F9DFAD, #F6B172);
+}
+
+.form-container2 h1 {
+  color: #4D3548;
+}
+
+.form-container2 p {
+  font: 0.5em sofiapro, sans-serif;
+}
+
+.form-container2 label {
+  font: 1em sofiapro, sans-serif;
+  color: #4D3548;
+  text-align: left;
+}
+
+.form-control2 {
+  background-color: #4D3548;
+  border-color: #4D3548;
+  color: #F9DFAD;
+  border-radius: 2px;
+
+  justify-content: center;
+  width: 100%;
+  height: 2em;
+}
+
+.form-control2:focus {
+  background-color: #C85750;
+  color: #F9DFAD;
+}
+
+
+
+
+/* LOCATION PAGE */
+.text_contents {
+  background-color: rgb(246, 172, 109);
+  padding: 1rem;
+  height: 31.25rem;
+}
+
+.text_contents .text_contents_heading {
+  text-align: center;
+}
+
+#location_contents .col-lg-4 h1 {
+  font: 1.5rem bluu, sans-serif;
+  color: rgb(59, 36, 56);
+  background-color: rgb(249, 223, 174);
+  padding: 0.625rem;
+}
+
+#location_contents .first_row {
+  align-items: center;
+  height: 100vh;
+}
+
+#location_contents .col-lg-4 {
+  padding: 1.25rem 0;
+}
+
+/* Address */
+#location_contents .address {
+  margin-top: 2.5rem;
+}
+
+.address span {
+  font-size: 1.3rem;
+  color: rgb(59, 36, 56);
+}
+
+.address .col-lg-6 h2 {
+  font: 1.15rem bluu, sans-serif;
+  color: rgb(59, 36, 56);
+  display: inline;
+  font-weight: bold;
+}
+
+.address p {
+  font-family: sofiapro, Arial, Helvetica, sans-serif;
+  color: rgb(59, 36, 56);
+  margin-left: 1.56rem;
+  font-size: 1rem;
+}
+
+/* Contact Number */
+.contact_number {
+  margin-top: 2.5rem;
+}
+
+.contact_number span {
+  font-size: 1.2rem;
+  color: rgb(59, 36, 56);
+}
+
+.contact_number h2 {
+  font: 1.15rem bluu, sans-serif;
+  color: rgb(59, 36, 56);
+  display: inline;
+  font-weight: bold;
+}
+
+.contact_number a {
+  color: rgb(59, 36, 56);
+  display: inline-block;
+  margin-left: 1.25rem;
+  font-size: 1rem;
+}
+
+.contact_number a:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+/* Email Address */
+.email_address {
+  margin-top: 2.5rem;
+}
+
+.email_address span {
+  font-size: 1.2rem;
+  color: rgb(59, 36, 56);
+}
+
+.email_address h2 {
+  font: 1.15rem bluu, sans-serif;
+  color: rgb(59, 36, 56);
+  display: inline;
+  font-weight: bold;
+}
+
+.email_address a {
+  color: rgb(59, 36, 56);
+  display: inline-block;
+  margin-left: 0.7rem;
+  font-size: 1rem;
+}
+
+.email_address a:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+.location_btn {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.spinn {
+  display: none;
+  border: none
+}
+
+.location_btn .btn {
+  border: none;
+}
+
+
+.get_loc_btn {
+  background: linear-gradient(to bottom, rgb(191, 81, 84), #FF8C00);
+  color: rgb(249, 223, 174);
+  padding: 0.9375rem 1.25rem;
+  border: none;
+  border-radius: 0.3125rem;
+  font: 1rem bluu, sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.get_loc_btn:hover {
+  color: rgb(59, 36, 56);
+  transform: translateY(-0.125rem);
+  box-shadow: 0rem 0.125rem 0.625rem rgba(0, 0, 0, 0.2);
+}
+
+#spinner {
+  height: 2.5rem;
+}
+
+/* LEFT COLUMN */
+#location_contents .col-lg-8 {
+  padding: 1.25rem 1rem;
+  margin-top: 0.4rem;
+}
+
+.map iframe {
+  width: 100%;
+  height: 31.25rem;
+}
+
+
+/* --------------------------------------------FAQ SECTION---------------------------------------*/
+
+.faq_heading {
+  margin-top: 4rem;
+  font: 2.5rem bluu, sans-serif;
+  color: rgb(249, 223, 174);
+}
+
+.all_accordions {
+  margin: 4rem 0;
+}
+
+#accordionOuter,
+#accordionOuter1,
+#accordionOuter1,
+#accordionOuter2,
+#accordionOuter3,
+#accordionOuter4 {
+  margin-bottom: 3rem;
+}
+
+.header_accordion_button {
+  padding: 1.5rem;
+  font-family: sofiapro, Arial, Helvetica, sans-serif;
+  font-size: 1.15rem;
+  color: rgb(59, 36, 56);
+  font-weight: bold;
+}
+
+.accordion-item {
+  background-color: rgb(246, 172, 109);
+}
+
+.nested_accordion {
+  background-color: rgb(249, 223, 174);
+  border-radius: 0.5rem;
+}
+
+.accordion-header button:hover {
+  background-color: rgb(230, 144, 69);
+  ;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgb(228, 104, 66);
+  /* change to your desired color */
+  color: rgb(59, 36, 56);
+
+}
+
+.nested_buttons {
+  font-family: sofiapro, Arial, Helvetica, sans-serif;
+  font-size: 1.08rem;
+  font-weight: bold;
+  color: rgb(59, 36, 56);
+}
+
+.nested_paragraph {
+  font-family: sofiapro, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: black;
+  padding: 2rem;
+}
+
+.accordion {
+  --bs-accordion-bg: rgb(246, 172, 109);
+  --bs-accordion-border-color: none;
+  --bs-accordion-btn-focus-box-shadow: none;
+
+}
+
+.accordion-item {
+  border: none;
+}
+
+.accordion-button:focus {
+  border-color: none;
+}
+
+
+
+/*------------------------ HISTORY SECTION --------------------------------*/
+.history_heading {
+  margin: 3rem 0 1.2rem 0;
+  font: 2.5rem bluu, sans-serif;
+  color: rgb(249, 223, 174);
+  padding: 0.8rem;
+}
+
+.all_hogwarts_images {
+  width: 90%;
+}
+
+.all_history_text {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.history_text {
+  background-color: rgb(246, 172, 109);
+}
+
+.history_text .col-lg-12 {
+  padding: 1.5rem;
+}
+
+.history_text .col-lg-12 p {
+  font-family: sofiapro, Arial, Helvetica, sans-serif;
+  font-size: 1.08rem;
+}
+
+.carousel-caption {
+  background-color: rgb(249, 223, 174, 0.7);
+  padding: 0;
+  color: black;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 85%;
+}
+
+.carousel-caption h2 {
+  font-family: sofiapro, Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  padding: 0.6rem 0 0.2rem 0;
+  margin: 0;
+}
+
+.carousel-caption p {
+  font-family: sofiapro, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding: 0.2rem 0 0.8rem 0;
+  margin: 0;
+}
+
+
+
+
+
+
+
+/* MEDIA QUERIES FOR MORE RESPONSIVENESS WITH REDUCING SCREEN SIZE */
+@media screen and (max-width: 1220px) {
+
+  /* NAVIGATION BAR */
+  .navbar-nav .nav-item {
+    margin: 0 0.8rem;
+  }
+
+  .dropdown-item {
+    padding: 0.2rem 2rem;
+    color: rgb(249, 223, 174);
+  }
+
+  #language_dropdown {
+    margin-left: -4rem;
+  }
+
+  .dropdown-item {
+    padding: 0.9rem 2rem;
+  }
+
+  /* LOCATION PAGE */
+
+  .text_contents {
+    height: 29rem;
+  }
+
+  .map iframe {
+    height: 29rem;
+  }
+
+
+  #location_contents .col-lg-4 h1 {
+    font: 1.3rem bluu, sans-serif;
+  }
+
+  /* Address */
+  .address span {
+    font-size: 1rem;
+    color: rgb(59, 36, 56);
+  }
+
+  .address .col-lg-6 h2 {
+    font: 1rem bluu, sans-serif;
+  }
+
+  .address p {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  /* Contact Number */
+  .contact_number span {
+    font-size: 0.9rem;
+  }
+
+  .contact_number h2 {
+    font-size: 1rem;
+  }
+
+  .contact_number a {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  /* Email Address */
+  .email_address span {
+    font-size: 1rem;
+  }
+
+  .email_address h2 {
+    font-size: 1rem;
+  }
+
+  .email_address a {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  /* GET LOCATION BUTTON */
+  .get_loc_btn {
+    padding: 0.8rem 1rem;
+    font: 1rem bluu, sans-serif;
+  }
+
+}
+
+@media screen and (max-width: 991px) {
+
+  #location_contents .col-lg-4 h1 {
+    font-size: 1.2rem;
+  }
+
+  #location_contents .col-lg-4 {
+    padding: 1.25rem 0.8rem;
+  }
+
+  /* Address */
+  #location_contents .address {
+    margin-top: 2.5rem;
+  }
+
+  .address span {
+    font-size: 1rem;
+  }
+
+  .address .col-lg-6 h2 {
+    font-size: 0.9rem;
+  }
+
+  .address p {
+    font-size: 0.8rem;
+  }
+
+  /* Contact Number */
+  .contact_number {
+    margin-top: 2.5rem;
+  }
+
+  .contact_number span {
+    font-size: 0.9rem;
+  }
+
+  .contact_number h2 {
+    font-size: 0.9rem;
+  }
+
+  .contact_number a {
+    font-size: 0.8rem;
+  }
+
+  /* Email Address */
+  .email_address {
+    margin-top: 2.5rem;
+  }
+
+  .email_address span {
+    font-size: 0.9rem;
+  }
+
+  .email_address h2 {
+    font-size: 0.9rem;
+  }
+
+  .email_address a {
+    font-size: 0.8rem;
+  }
+
+  /* GET LOCATION BUTTON */
+
+  .get_loc_btn {
+    padding: 0.8rem 1rem;
+    font: 1rem bluu, sans-serif;
+  }
+
+  /* Some extra modifications to adjust the location menu */
+  .text_contents {
+    padding: 0.5rem;
+  }
+
+  #location_contents .col-lg-4 h1 {
+    padding: 0.4rem;
+  }
+
+  #location_contents .address {
+    margin-top: 2.2rem;
+    text-align: center;
+  }
+
+  .address .postal_address {
+    padding: 0 5px;
+  }
+
+  .address .textual_address {
+    padding: 0 5px;
+  }
+
+  .address .textual_address p {
+    margin-left: 10px;
+  }
+
+  .contact_number .phone_number {
+    padding: 0 5px;
+    text-align: center;
+  }
+
+  .contact_number .numerical_digits {
+    padding: 0 5px;
+  }
+
+  .contact_number .numerical_digits a {
+    margin-left: 10px;
+  }
+
+  .email_address .email_text {
+    padding: 0 5px;
+    text-align: center;
+  }
+
+  .email_address .textual_email {
+    padding: 0 5px;
+  }
+
+  .email_address .textual_email a {
+    margin-left: 0px;
+  }
+
+
+
+  .carousel-caption h2 {
+    font-size: 1.2rem;
+    padding: 0.4rem 0 0.1rem 0;
+    margin: 0;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+    padding: 0.1rem 0 0.4rem 0;
+    margin: 0;
+  }
+
+}
+
+
+
+/*laundry*/
+
+
+.top-up-icons {
+  width: 10%;
+  height: 10%;
+  margin-left:15%;
+}
+
+.form-container3 {
+
+  position: absolute;
+  width: 50%;
+  height: 85%;
+  top: 15%;
+  left: 25%;
+  padding: 5%;
+  border-radius: 2px;
+  box-shadow: 12px 12px 22px rgba(39, 39, 39, 0.801);
+  background-image: linear-gradient(#F9DFAD, #F6B172);
+}
+
+.form-container3 h1 {
+  text-align: center;
+  color: #4D3548;
+  font-family: bluu,;
+}
+
+.form-container3 p {
+  font-family: sofiapro, sans-serif;
+  font-size: 1.2em;
+}
+
+
+.form-control {
+  background-color: #4D3548;
+  border-color: #4D3548;
+  color: #F9DFAD;
+  border-radius: 2px;
+  margin-top: 10%;
+  justify-content: center;
+  width: 100%;
+  height: 4em;
+}
+
+.form-control:focus {
+  background-color: #C85750;
+  color: #F9DFAD;
+}
+
+.btn2 {
+  /* border: none;
+  outline: none; */
+  background-image: linear-gradient(#C85750, #E46842);
+  height: 2.5em;
+  width: 70%;
+  font: 1em sofiapro, sans-serif;
+  color: #F9DFAD;
+  border-radius: 4px;
+
+}
+
+.btn2:hover {
+  background-image: linear-gradient(#ae3830, #de5f38);
+  border-color: white;
+  color: #F6B172;
+}
+
+
+.laundry-container{
+ margin-left:1.5rem;
+} 
+
+.d-block-laundry {
+width:65%;
+margin-left:20%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 15%;
+}
+
+/* studyRoom */
+
+
+.study-container {
+  margin-top: 1%;
+}
+
+
+
+.card-study, .card-laundry, .card-gym {
+  background-color:  #F6B172;
+  width:75%;
+  margin-top:1%;
+  margin-left:8%;
+
+}
+
+.card-text-study, .card-text-laundry,.card-text-gym {
+  font: 1.2em bluu, sans-serif;
+  color: rgb(59, 36, 56);
+  text-align: center;
+}
+
+#studyRoomIcon {
+  width: 8%;
+  height: 8%;
+}
+
+
+.d-block-study{
+  width:80%;
+  margin-left:10%;
+}
+
+/*gym*/
+.gym-container{
+  margin-top: 1%;
+  justify-content: center;
+  height:100%;
+}
+
+
+.d-block-gym {
+  margin-top:2rem;
+  width:100%;
+  margin-left:10%;
+}
+
+.mediacontainer{
+padding:2.5rem;
+}
+
+.video-container{
+  width:100%;
+  margin-left:3.5rem;
+  /* height:50%; */
+  margin-top: 1rem;
+}
+
+
+.download-video{
+  font-family: sofiapro, sans-serif;
+  font-size:1rem;
+  color: #F9DFAD;
+  text-align: center;
+}
+
+
+
+/* #gymIcon {
+  width:30%;
+  height:30%;
+} */
+@media screen and (max-width: 850px) {
+
+  /* Navigation bar */
+  #language_dropdown {
+    margin-left: 0;
+  }
+
+
+  /*For Iphone 12 pro landscape mode and ipad Mini portrait mode*/
+  #chatbot-body {
+    height: 13.5rem;
+  }
+
+  #chatbot-container {
+    width: 45rem;
+  }
+
+  #chatbot-input {
+    width: 40rem;
+  }
+
+  .dropdown-item {
+    padding: 0.9rem 2rem;
+  }
+
+  /* LOCATION PAGE */
+
+  #location_contents .first_row {
+    align-items: center;
+    height: 50rem;
+  }
+
+  #location_contents .col-lg-4 h1 {
+    font-size: 1rem;
+  }
+
+  /* Address */
+  .address span {
+    font-size: 0.9rem;
+  }
+
+  .address .col-lg-6 h2 {
+    font-size: 0.8rem;
+  }
+
+  .address p {
+    font-size: 0.7rem;
+  }
+
+  /* Contact Number */
+  .contact_number span {
+    font-size: 0.8rem;
+  }
+
+  .contact_number h2 {
+    font-size: 0.8rem;
+  }
+
+  .contact_number a {
+    font-size: 0.7rem;
+  }
+
+  /* Email Address */
+  .email_address span {
+    font-size: 0.8rem;
+  }
+
+  .email_address h2 {
+    font-size: 0.8rem;
+  }
+
+  .email_address a {
+    font-size: 0.7rem;
+  }
+
+  /* GET LOCATION BUTTON */
+
+  #spinner {
+    height: 2rem;
+  }
+
+  .get_loc_btn {
+    padding: 0.7rem 0.8rem;
+    font: 0.9rem bluu, sans-serif;
+  }
+
+  /* Some extra modifications to adjust the location menu */
+  .text_contents {
+    padding: 0.5rem;
+    height: 25rem;
+  }
+
+  .map iframe {
+    width: 100%;
+    height: 25rem;
+  }
+
+  #location_contents .col-lg-4 h1 {
+    padding: 0.4rem;
+  }
+
+  #location_contents .address {
+    margin-top: 2.2rem;
+  }
+
+  .address .postal_address {
+    padding: 0 5px;
+  }
+
+  .address .textual_address {
+    padding: 0 5px;
+  }
+
+  .address .textual_address p {
+    margin-left: 10px;
+  }
+
+  .contact_number .phone_number {
+    padding: 0 5px;
+    text-align: center;
+  }
+
+  .contact_number .numerical_digits {
+    padding: 0 5px;
+  }
+
+  .contact_number .numerical_digits a {
+    margin-left: 10px;
+  }
+
+  .email_address .email_text {
+    padding: 0 5px;
+    text-align: center;
+  }
+
+  .email_address .textual_email {
+    padding: 0 5px;
+  }
+
+  .email_address .textual_email a {
+    margin-left: 0px;
+  }
+
+  /* -------------------------HISTORY SECTION------------------------------------ */
+
+  .carousel-caption h2 {
+    font-size: 1rem;
+    padding: 0.4rem 0 0.1rem 0;
+  }
+
+  .carousel-caption p {
+    font-size: 0.8rem;
+    padding: 0.1rem 0 0.4rem 0;
+  }
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+  /*Landscape mode of a normal mobile*/
+  #chatbot-body {
+    height: 13rem;
+  }
+
+  #chatbot-container {
+    width: 43.5rem;
+  }
+
+  #chatbot-input {
+    width: 39rem;
+  }
+
+  .dropdown-item {
+    padding: 0.9rem 2rem;
+  }
+
+  /* LOCATION PAGE */
+  #location_contents .first_row {
+    height: 60rem;
+  }
+
+  #location_contents .col-lg-4 h1 {
+    font-size: 1.4rem;
+  }
+
+  #location_contents .col-lg-4 {
+    padding: 1.25rem;
+  }
+
+  /* Address */
+
+  #location_contents .address {
+    margin-top: 0.9rem;
+  }
+
+  .address span {
+    font-size: 1.2rem;
+  }
+
+  .address .col-lg-6 h2 {
+    font-size: 1.15rem;
+  }
+
+  .address p {
+    font-size: 0.9rem;
+    font-weight: normal;
+  }
+
+  /* Contact Number */
+  .contact_number {
+    margin-top: 0rem;
+  }
+
+  .contact_number span {
+    font-size: 1.2rem;
+  }
+
+  .contact_number h2 {
+    font-size: 1.15rem;
+  }
+
+  .contact_number a {
+    font-size: 0.9rem;
+    font-weight: normal;
+  }
+
+  .numerical_digits {
+    text-align: center;
+  }
+
+  /* Email Address */
+  .email_address {
+    margin-top: 0.9rem;
+  }
+
+  .email_address span {
+    font-size: 1.2rem;
+  }
+
+  .email_address h2 {
+    font-size: 1.15rem;
+  }
+
+  .email_address a {
+    font-size: 0.9rem;
+    font-weight: normal;
+  }
+
+  .email_address .textual_email {
+    text-align: center;
+  }
+
+  /* GET LOCATION BUTTON */
+
+  .get_loc_btn {
+    margin-top: -1rem;
+    padding: 0.7rem 0.9rem;
+    font: 0.9rem bluu, sans-serif;
+  }
+
+  /* -------------------------HISTORY SECTION------------------------------------ */
+
+  .carousel-caption h2 {
+    font-size: 0.9rem;
+    padding: 0.2 0;
+  }
+
+  .carousel-caption p {
+    font-size: 0.7rem;
+    padding: 0;
+  }
+
+}
+
+
+@media screen and (max-width: 750px) {
+  #chatbot-body {
+    height: 21.875rem;
+  }
+
+  #chatbot-container {
+    width: 20.5rem;
+  }
+
+  #chatbot-input {
+    width: 16rem;
+  }
+
+  #chatbot-icon {
+    right: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header h1 .hogwarts {
+    font-size: 7rem;
+  }
+
+  header h2 {
+    font-size: 1.8rem;
+  }
+
+  .dropdown-item {
+    padding: 0.9rem 2rem;
+  }
+
+  /* -------------------------HISTORY SECTION------------------------------------ */
+
+  .carousel-caption h2 {
+    font-size: 0.7rem;
+  }
+
+  .carousel-caption p {
+    display: none
+  }
+
+  .carousel-caption {
+    top: 90%;
+
+  }
+}
+
+@media screen and (max-width: 467px) {
+
+  /*Portrait mode of a normal mobile */
+  #chatbot-body {
+    height: 21.875rem;
+  }
+
+  #chatbot-container {
+    width: 20.5rem;
+  }
+
+  #chatbot-input {
+    width: 16rem;
+  }
+
+  #chatbot-icon {
+    right: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header h1 .hogwarts {
+    font-size: 7rem;
+  }
+
+  header h2 {
+    font-size: 1.8rem;
+  }
+
+  .dropdown-item {
+    padding: 0.9rem 2rem;
+  }
+
+
+  /* -------------------------HISTORY SECTION------------------------------------ */
+
+  .carousel-caption h2 {
+    font-size: 0.6rem;
+    padding: 0.1rem 0 0 0;
+  }
+
+  .all_hogwarts_images {
+    width: 100%;
+  }
+}
