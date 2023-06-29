@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOGWARTS HAVEN | ACCOUNT </title>
+  <link rel="icon" href="pictures/logo.png">
+  <meta name="description"
+    content="Manage your student accommodation details easily with your personal account page. View your booking status, update your personal information, and access important documents all in one place.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--Custom css mentioned after boostrap css to overwrite some of it's features-->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <!--Css to inculcate third-party features of custom icons from font-awesome-->
+</head>
+
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <div class="wrap-1">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-lg">
+        <a class="navbar-brand" href="homepage.html" title="homepage"><img src="pictures/logo/logo.png" class="logo"
+            alt="brand logo" height="30"></a>
+        <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fa-solid fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <!-- ROOMS -->
+            <li class="nav-item">
+              <a class="nav-link" href="room.html">Rooms</a>
+            </li>
+            <!-- FACILITIES -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="facilities_dropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Facilities</a>
+              <ul class="dropdown-menu" aria-labelledby="facilities_dropdown">
+                <li>
+                  <a class="dropdown-item" href="facility_laundry.html"><img src="pictures/laundry_gym/lilsock.png"
+                      alt="laundry icon" height="20">&nbsp;Laundry</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="facility_studyRoom.html"><img src="pictures/laundry_gym/studyroom1.png"
+                      alt="studyroom icon" height="20">&nbsp;Study Rooms</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="facility_gym.html"><img src="pictures/laundry_gym/gym3.png"
+                      alt="gym icon" height="20">&nbsp;Gym</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- LOCATION -->
+            <li class="nav-item">
+              <a class="nav-link" href="location.html">Location</a>
+            </li>
+            <!-- HISTORY -->
+            <li class="nav-item">
+              <a class="nav-link" href="about_us.html">History</a>
+            </li>
+            <!-- FAQs -->
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQs</a>
+            </li>
+            <!-- REGISTER -->
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">Register</a>
+            </li>
+            <!-- LOGIN -->
+            <li class="nav-item">
+              <a class="nav-link" id="location_highlight" href="login.html">Login</a>
+            </li>
+            <!-- LANGUAGE -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false"><img src="pictures/language_icons/bb.png" class="english_lang" alt="british flag"
+                  width="20" height="20">&nbsp;Eng</a>
+              <ul class="dropdown-menu" aria-labelledby="languageDropdown" id="language_dropdown">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="pictures/language_icons/china.png" class="chinese_lang" alt="chinese flag"
+                      height="20">&nbsp;Chinese</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="pictures/language_icons/spanish.png" class="spanish_lang" alt="spanish flag"
+                      height="20">&nbsp;Spanish</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="pictures/language_icons/french.png" class="french_lang" alt="french flag"
+                      height="20">&nbsp;French</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"><img src="pictures/language_icons/german.png" class="german_lang"
+                      alt="german flag" height="20">&nbsp;German</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- HEADER -->
+  <div class="wrap-2">
+    <div class="all_account_contents">
+    <div class="container-lg">
+      <div class="row first_row">
+        <!-- LEFT COLUMN -->
+        <div class="col-lg-3 col-md-3">
+          <div class="sideaccount">
+
+            <img src="pictures/account/profile.jpg" class="img-fluid" alt="profile picture">
+
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link1 active" aria-current="page" href="personalinfo.html">Edit Account</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link1 active" aria-current="page" href="events.html">Events</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link1 active" aria-current="page" href="catering.html">Catering</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link1 active" aria-current="page" href="maintenance.html">Maintenance</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link1 active" aria-current="page" href="#">My Finance</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link1 active" aria-current="page" href="homepage.html">Log Out</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN-->
+        <div class="col-lg-9 col-md-9">
+          <div class="mainaccount">
+            <h1 class="text-center">My Account</h1>
+            <h2>Hello Wizard!</h2>
+            <p>Welcome to your Hogwarts portal, we're happy to see you again.</p>
+
+            <p>We want to make sure your stay is as enjoyable as possible. On this portal you will be able to: </p>
+            <ul>
+
+              <li>
+                <p>Manage your booking</p>
+              </li>
+
+              <li>
+                <p>Edit you personal details</p>
+              </li>
+
+              <li>
+                <p>See all upcoming Events</p>
+              </li>
+
+              <li>
+                <p>Manage your meals</p>
+              </li>
+
+              <li>
+                <p>Log Maintenance requests</p>
+              </li>
+
+              <li>
+                <p>Pay for your rent or any other outstanding charge</p>
+              </li>
+            </ul>
+
+            <p>For any other questions, we are always here to help. Speak to a member of the site team who will be glad
+              to help.</p>
+
+            <p>Enjoy your stay!</p>
+
+            <p>The Hogwarts Haven Team</p>
+
+
+            <div class="row">
+              <div class="col-8"></div>
+
+              <div class="all_buttons col-2"> </div>
+
+              <!--book now button-->
+              <div class="all_buttons col-2">
+                <a href="room.html">
+                  <div class="btn10 mt-3 mb-5">Book Now</div>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+ </div>
+
+
+  <!-- AI CHATBOT -->
+  <div id="chatbot-icon" tabindex="0">
+    <span class="dot"></span>
+    <span class="fa-solid fa-message" id="message_icon">
+      <span class="text">Chat</span>
+    </span>
+  </div>
+  <div id="chatbot-container">
+    <div id="chatbot-header">
+      <span class="fa-solid fa-xmark" id="cross"></span>
+      <div id="magical_messenger">Magical Messenger</div>
+    </div>
+    <div id="chatbot-body">
+      <div class="welcome">
+        <p>Welcome to Hogwarts Haven!</p>
+        <p>
+          I am the Magical messenger and can answer most of your questions
+        </p>
+        <p>How can I help you today?</p>
+      </div>
+    </div>
+    <div id="chatbot-footer">
+      <label for="chatbot-input" class="ai_label">.</label>
+      <input type="text" id="chatbot-input" placeholder="Start a conversation...">
+      <button id="chatbot-send">
+        <span class="chat_button_text">.</span>
+        <span class="fa-solid fa-paper-plane"></span>
+      </button>
+    </div>
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container-lg" id="footer_contents">
+      <div class="row">
+        <div class="col-lg-4 text-lg-start text-center">
+          <p id="contact"><a href="location.html">Contact us</a></p>
+        </div>
+        <div class="col-lg-4 text-lg-center text-center">
+          <ul class="list-unstyled list-inline" id="media_icons">
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/havenathgwarts/" title="instagram account" target="_blank"><i
+                  class="fab fa-instagram fa-lg"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://twitter.com/HavenAtHogwarts" title="twitter account" target="_blank"><i
+                  class="fab fa-twitter fa-lg"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 text-lg-end text-center">
+          <ul class="list-unstyled" id="legal">
+            <li><a href="accessibility.html">Accessibility</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; 2023 Hogwarts Haven. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!--BOOTSTRAP JAVASCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

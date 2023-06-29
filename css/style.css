@@ -1,27 +1,41 @@
-/* Font for navigation headings */
-/* Font for navigation headings */
+/* Font for navigation headings and rest of the headings on page*/
 @font-face {
   font-family: bluu;
   src: url(../fonts/bluu-next/BluuNext-Bold.otf);
 }
 
-/* Font for h1 only */
+/* Font for h1 of homepage only */
 @font-face {
   font-family: bigelow;
   src: url(../fonts/BigelowRules-Regular.ttf);
 }
 
-/*Font for text*/
+/* Font for h1 of homepage only */
 @font-face {
   font-family: sofiapro;
-  src: url(../fonts/Sofia-font/Sofia-font/SofiaProMedium.ttf);
+  src: url(../fonts/sofia_font/SofiaProMedium.ttf);
 }
 
 body {
   background-color: rgb(59, 36, 56);
 }
 
-/*NAVIGATION BAR*/
+a {
+  transition: text-decoration-color 0.6s ease;
+}
+
+a:hover {
+  text-decoration-color: transparent;
+}
+
+/* background image for homepage */
+.background_image_wrapper {
+  background-image: url('../pictures/homepage_picture/entrance.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/*---------------------------------------------------------NAVIGATION BAR------------------------------------------*/
 .logo {
   height: 2rem;
 }
@@ -53,13 +67,12 @@ body {
 /* DROPDOWN MENU */
 .dropdown-menu {
   background-color: rgb(65, 30, 33);
-  ;
   border: 0.125rem solid rgb(209, 108, 20);
   box-shadow: 0px 0.1875rem 0.625rem rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-item {
-  font: rem bluu, sans-serif;
+  font: 1rem sofiapro, sans-serif;
   padding: 0.5rem 2rem;
   color: rgb(249, 223, 174);
 }
@@ -72,6 +85,11 @@ body {
 /* HEADER */
 header {
   height: 100vh;
+}
+
+.welcome_homepage {
+  background-color: rgb(59, 36, 56, 0.85);
+  padding: 1rem;
 }
 
 header h1 {
@@ -88,7 +106,7 @@ header h2 {
   color: rgb(246, 172, 109);
 }
 
-/* FOOTER */
+/*-----------------------------------------------------------------FOOTER---------------------------------------------------------*/
 footer {
   position: absolute;
   width: 100%;
@@ -104,15 +122,14 @@ footer {
 
 /* CONTACT US */
 #contact a {
-  font-family: sofiapro, Arial, Helvetica, sans-serif;
   color: rgb(59, 36, 56);
-  font-size: 1rem;
+  font: 1rem sofiapro, sans-serif;
   font-weight: bold;
   padding: 0.5rem;
 }
 
 #contact a:hover {
-  color: rgb(191, 81, 84);
+  color: rgb(113, 0, 4);
 }
 
 /* SOCIAL MEDIA ICONS */
@@ -127,7 +144,7 @@ footer {
 }
 
 #media_icons a:hover {
-  color: rgb(191, 81, 84);
+  color: rgb(113, 0, 4);
 }
 
 /* LEGAL POLICIES */
@@ -137,28 +154,40 @@ footer {
 
 #legal li a {
   padding: 0.5rem;
-  font-family: sofiapro, Arial, Helvetica, sans-serif;
   color: rgb(59, 36, 56);
-  font-size: 1rem;
+  font: 1rem sofiapro, sans-serif;
   font-weight: bold;
 }
 
 #legal li a:hover {
-  color: rgb(191, 81, 84);
+  color: rgb(113, 0, 4);
 }
 
 /* COPYRIGHT. ALL RIGHTS RESERVED */
 .copyright {
   text-align: center;
   padding: 1rem;
-  font-family: sofiapro, Arial, Helvetica, sans-serif;
   color: rgb(59, 36, 56);
-  font-size: 0.9rem;
+  font: 0.9rem sofiapro, sans-serif;
   background-color: rgb(249, 223, 174);
 }
 
 
-/* AI CHATBOT DETAILS*/
+/* ---------------------------------------------------------AI CHATBOT DETAILS-------------------------------------------------------*/
+
+.chat_button_text {
+  display: none;
+}
+
+.ai_label {
+  display: none;
+}
+
+#chatbot-input::placeholder {
+  color: rgb(56, 55, 55) !important;
+  text-align: left;
+}
+
 #chatbot-icon {
   position: fixed;
   bottom: 3rem;
@@ -172,7 +201,7 @@ footer {
   top: 0.625rem;
   right: 0.35rem;
   font: 1rem bluu, sans-serif;
-  color: rgb(65, 30, 33);
+  color: rgb(0, 0, 0);
 }
 
 #message_icon {
@@ -198,7 +227,7 @@ footer {
   right: 1.25rem;
   z-index: 9999;
   width: 21.875rem;
-  border: 0.0625 solid #ccc;
+  border: 0.0625rem solid #ccc;
   border-radius: 0.3125rem;
 }
 
@@ -210,7 +239,7 @@ footer {
   border-top-right-radius: 0.3125rem;
 }
 
-#chatbot-header h3 {
+#magical_messenger {
   font: 1.5rem bluu, sans-serif;
   display: inline;
   margin-left: 2.5rem;
@@ -232,7 +261,7 @@ footer {
 }
 
 #chatbot-body p {
-  font-family: sofiapro, Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.875rem;
 }
 
@@ -274,125 +303,237 @@ footer {
   color: rgb(59, 36, 56);
 }
 
+/*--------------------------------------------ROOMS----------------------------------------------*/
+/* Set the width and height of the squares */
+.square {
+  width: 30%;
+  padding-top: 30%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 1%;
+  float: left;
+  background-color: #eee;
+}
 
-/*--------------------------------------------LOG-IN and REGISTER---------------------------------------------*/
-
-.form-container {
-  text-align: center;
+/* Set the image size and position */
+.square img {
   position: absolute;
-  width: 40%;
-  height: 85%;
-  top: 15%;
-  left: 30%;
-  padding: 5%;
-  border-radius: 2px;
-  box-shadow: 12px 12px 22px rgba(39, 39, 39, 0.801);
-  background-image: linear-gradient(#F9DFAD, #F6B172);
-}
-
-.form-container h1 {
-  color: #4D3548;
-  font-family: bluu,;
-}
-
-.form-container p {
-  font-family: sofiapro, sans-serif;
-  font-size: 1.2em;
-}
-
-
-.form-control {
-  background-color: #4D3548;
-  border-color: #4D3548;
-  color: #F9DFAD;
-  border-radius: 2px;
-  margin-top: 10%;
-  justify-content: center;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 4em;
+  height: 100%;
+  object-fit: cover;
 }
 
-.form-control:focus {
-  background-color: #C85750;
-  color: #F9DFAD;
-}
-
-/*e-mail, username, password placeholders*/
-::-webkit-input-placeholder {
-  font: 1em sofiapro, sans-serif;
-  color: #F9DFAD !important;
+/* Set the caption style */
+.caption {
+  font-family: sofiapro, sans-serif;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(249, 223, 174);
+  padding: 5px;
+  font-size: 1.2rem;
   text-align: center;
 }
 
-/*log in - register button*/
-.btn1 {
-  border: none;
-  outline: none;
+/* Clear floats after the squares */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*book now, my account, room types button*/
+.all_buttons a {
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+}
+
+.btn10 {
   background-image: linear-gradient(#C85750, #E46842);
-  height: 4em;
-  width: 40%;
-  font: 1.2em sofiapro, sans-serif;
+  color: rgb(249, 223, 174);
+  padding: 10%;
+  border: none;
+  border-radius: 0.3125rem;
+  font: 1.2rem sofiapro, sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn10:hover {
+  color: rgb(85, 36, 78);
+  transform: translateY(-0.125rem);
+  box-shadow: 0rem 0.125rem 0.625rem rgba(0, 0, 0, 0.2);
+}
+
+/*--------------------------------------------------------LAUNDRY---------------------------------------------------------*/
+#media_links a {
+  color: #E46842;
+}
+
+#media_links a:hover {
   color: #F9DFAD;
-  border-radius: 4px;
-
 }
 
-.btn1:hover {
-  background-image: linear-gradient(#ae3830, #de5f38);
-  color: #F6B172;
+.all_laundry_contents {
+  height: 110vh;
+}
+
+.text-container a {
+  color: rgb(37, 5, 5);
+}
+
+.text-container a:hover {
+  text-decoration: none;
+  color: rgb(113, 0, 4);
+}
+
+.btn2 {
+  background-image: linear-gradient(#C85750, #E46842);
+  padding: 1.25rem 1rem;
+  margin-top: 0.4rem;
+  font: 1em sofiapro, sans-serif;
+  color: #F9DFAD;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  border: none;
+  border-radius: 0.3125rem;
 }
 
 
+.btn2:hover {
+  color: rgb(85, 36, 78);
+  transform: translateY(-0.125rem);
+  box-shadow: 0rem 0.125rem 0.625rem rgba(0, 0, 0, 0.2);
+}
 
-/*-----------------------------------------------PERSONAL INFO---------------------------------------------------*/
 
-.form-container2 {
-  text-align: left;
+.laundry-container {
+  text-align: center;
   position: absolute;
   width: 70%;
-  height: 50em;
-  top: 15%;
+  height: 100vh;
+  top: 5%;
+  bottom: 15%;
   left: 15%;
   padding: 5%;
-  border-radius: 2px;
-  box-shadow: 12px 12px 22px rgba(39, 39, 39, 0.801);
-  background-image: linear-gradient(#F9DFAD, #F6B172);
+
 }
 
-.form-container2 h1 {
-  color: #4D3548;
+.text-container {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 100%;
 }
 
-.form-container2 p {
-  font: 0.5em sofiapro, sans-serif;
+.d-block-laundry {
+  width: 65%;
+  margin-left: 20%;
 }
 
-.form-container2 label {
-  font: 1em sofiapro, sans-serif;
-  color: #4D3548;
-  text-align: left;
+.carousel-control-prev,
+.carousel-control-next {
+  width: 15%;
 }
 
-.form-control2 {
-  background-color: #4D3548;
-  border-color: #4D3548;
-  color: #F9DFAD;
-  border-radius: 2px;
+/*-----------------------------------------STUDY ROOM--------------------------------------------------------*/
 
+.all_study_room_contents {
+  height: 125vh;
+}
+
+.all_study_room_contents {
+  margin-bottom: 4rem;
+}
+
+.all_hogwarts_images_study {
+  width: 75%;
+}
+
+.study-container {
+  margin-top: 3rem;
+}
+
+.card-study,
+.card-laundry,
+.card-gym {
+  background-color: #F6B172;
+  width: 75%;
+  margin-top: 1%;
+  margin-left: 8%;
+
+}
+
+.card-text-study,
+.card-text-laundry,
+.card-text-gym {
+  font: 1.2em bluu, sans-serif;
+  color: rgb(59, 36, 56);
+  text-align: center;
+}
+
+#studyRoomIcon {
+  width: 8%;
+  height: 8%;
+}
+
+
+/*------------------------------------------GYM--------------------------------------------------*/
+.all_gym_contents {
+  height: 100vh;
+}
+
+.gym-container {
+  margin-top: 3rem;
   justify-content: center;
-  width: 100%;
-  height: 2em;
+  height: 100%;
 }
 
-.form-control2:focus {
-  background-color: #C85750;
+.d-block-gym {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.mediacontainer {
+  padding: 2.5rem;
+  margin-left: 10%;
+}
+
+
+video {
+  margin-top: 2%;
+}
+
+
+.download-video {
+  font-family: sofiapro, sans-serif;
+  font-size: 1rem;
+  color: #F9DFAD;
+  text-align: center;
+}
+
+.download-video a {
+  color: #E46842;
+}
+
+.download-video a:hover {
+  text-decoration: none;
   color: #F9DFAD;
 }
 
+/*----------------------------------------------------------------LOCATION PAGE-----------------------------------------------------*/
+#location_highlight {
+  background-color: rgb(65, 30, 33);
+  color: rgb(249, 223, 174);
+}
 
-
-
-/* LOCATION PAGE */
 .text_contents {
   background-color: rgb(246, 172, 109);
   padding: 1rem;
@@ -437,10 +578,9 @@ footer {
 }
 
 .address p {
-  font-family: sofiapro, Arial, Helvetica, sans-serif;
   color: rgb(59, 36, 56);
   margin-left: 1.56rem;
-  font-size: 1rem;
+  font: 1rem sofiapro, sans-serif;
 }
 
 /* Contact Number */
@@ -461,7 +601,8 @@ footer {
 }
 
 .contact_number a {
-  color: rgb(59, 36, 56);
+  font-family: sofiapro, sans-serif;
+  color: rgb(113, 0, 4);
   display: inline-block;
   margin-left: 1.25rem;
   font-size: 1rem;
@@ -469,7 +610,6 @@ footer {
 
 .contact_number a:hover {
   text-decoration: none;
-  color: blue;
 }
 
 /* Email Address */
@@ -490,15 +630,14 @@ footer {
 }
 
 .email_address a {
-  color: rgb(59, 36, 56);
+  color: rgb(113, 0, 4);
   display: inline-block;
   margin-left: 0.7rem;
-  font-size: 1rem;
+  font: 1rem sofiapro, sans-serif;
 }
 
 .email_address a:hover {
   text-decoration: none;
-  color: blue;
 }
 
 .location_btn {
@@ -522,7 +661,7 @@ footer {
   padding: 0.9375rem 1.25rem;
   border: none;
   border-radius: 0.3125rem;
-  font: 1rem bluu, sans-serif;
+  font: 1rem sofiapro, sans-serif;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
@@ -549,7 +688,13 @@ footer {
 }
 
 
-/* --------------------------------------------FAQ SECTION---------------------------------------*/
+
+/*----------------------------------------------------------FAQ SECTION--------------------------------------------------------------*/
+
+#faq_highlight {
+  background-color: rgb(65, 30, 33);
+  color: rgb(249, 223, 174);
+}
 
 .faq_heading {
   margin-top: 4rem;
@@ -572,8 +717,7 @@ footer {
 
 .header_accordion_button {
   padding: 1.5rem;
-  font-family: sofiapro, Arial, Helvetica, sans-serif;
-  font-size: 1.15rem;
+  font: 1.15rem sofiapro, sans-serif;
   color: rgb(59, 36, 56);
   font-weight: bold;
 }
@@ -589,35 +733,29 @@ footer {
 
 .accordion-header button:hover {
   background-color: rgb(230, 144, 69);
-  ;
 }
 
 .accordion-button:not(.collapsed) {
   background-color: rgb(228, 104, 66);
-  /* change to your desired color */
   color: rgb(59, 36, 56);
-
 }
 
 .nested_buttons {
-  font-family: sofiapro, Arial, Helvetica, sans-serif;
-  font-size: 1.08rem;
+  font: 1.08rem sofiapro, sans-serif;
   font-weight: bold;
   color: rgb(59, 36, 56);
 }
 
 .nested_paragraph {
-  font-family: sofiapro, Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  color: black;
+  font: 1rem sofiapro, sans-serif;
+  color: #4D3548;
   padding: 2rem;
 }
 
 .accordion {
   --bs-accordion-bg: rgb(246, 172, 109);
-  --bs-accordion-border-color: none;
+  --bs-accordion-border-color: transparent;
   --bs-accordion-btn-focus-box-shadow: none;
-
 }
 
 .accordion-item {
@@ -625,12 +763,16 @@ footer {
 }
 
 .accordion-button:focus {
-  border-color: none;
+  border-color: transparent;
 }
 
 
+/*-----------------------------------------------------HISTORY PAGE SECTION---------------------------------------------------*/
+#history_highlight {
+  background-color: rgb(65, 30, 33);
+  color: rgb(249, 223, 174);
+}
 
-/*------------------------ HISTORY SECTION --------------------------------*/
 .history_heading {
   margin: 3rem 0 1.2rem 0;
   font: 2.5rem bluu, sans-serif;
@@ -639,12 +781,20 @@ footer {
 }
 
 .all_hogwarts_images {
-  width: 90%;
+  width: 80%;
 }
 
 .all_history_text {
   margin-top: 1rem;
   margin-bottom: 4rem;
+}
+
+.all_history_text a {
+  color: rgb(113, 0, 4);
+}
+
+.all_history_text a:hover {
+  text-decoration: none;
 }
 
 .history_text {
@@ -656,8 +806,8 @@ footer {
 }
 
 .history_text .col-lg-12 p {
-  font-family: sofiapro, Arial, Helvetica, sans-serif;
-  font-size: 1.08rem;
+  font: 1.08rem sofiapro, sans-serif;
+  color: #4D3548;
 }
 
 .carousel-caption {
@@ -671,26 +821,426 @@ footer {
 }
 
 .carousel-caption h2 {
-  font-family: sofiapro, Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
+  font: 1.5rem sofiapro, sans-serif;
   padding: 0.6rem 0 0.2rem 0;
   margin: 0;
 }
 
 .carousel-caption p {
-  font-family: sofiapro, Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+  font: 1rem sofiapro, sans-serif;
   padding: 0.2rem 0 0.8rem 0;
   margin: 0;
 }
 
 
+/*---------------------------------------------------ACCESSIBILTY PAGE------------------------------------------------*/
+
+.accessibility_heading {
+  margin: 3rem 0 1.2rem 0;
+  font: 2.5rem bluu, sans-serif;
+  color: rgb(249, 223, 174);
+  padding: 0.8rem;
+}
+
+.accessibility_text {
+  background-color: rgb(246, 172, 109);
+}
+
+.accessibility_text h2 {
+  font: 1.5rem bluu, sans-serif;
+  color: #000000;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.accessibility_text h2 span {
+  text-decoration: none;
+  color: #000000;
+}
+
+.accessibility_text .col-lg-12 p {
+  font: 1.08rem sofiapro, sans-serif;
+  padding: 0 1.5rem;
+  color: #4D3548;
+}
+
+.accessibility_text ul {
+  font: 1.08rem sofiapro, sans-serif;
+  padding: 0 2rem;
+  color: #4D3548;
+}
+
+.accessibility_text ul li {
+  margin-top: 1rem;
+  color: #4D3548;
+}
+
+.accessibility_text a {
+  color: rgb(113, 0, 4);
+}
+
+.accessibility_text a:hover {
+  text-decoration: none;
+}
+
+.all_accessibility_text {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+.heading_centralisation div {
+  text-align: center;
+}
+
+.heading_centralisation {
+  margin-bottom: 2rem;
+}
+
+#accessibilty_contacts {
+  margin-top: 4rem;
+}
 
 
+/*---------------------------------------Terms Of Use------------------------------------------------*/
+.terms_heading {
+  margin: 3rem 0 1.2rem 0;
+  font: 2.5rem bluu, sans-serif;
+  color: rgb(249, 223, 174);
+  padding: 0.8rem;
+}
+
+.all_terms_of_use_text {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+.terms_of_use_text {
+  background-color: rgb(246, 172, 109);
+}
+
+.terms_heading_centralisation {
+  margin-bottom: 2rem;
+}
+
+.terms_heading_centralisation div {
+  text-align: center;
+}
+
+.terms_of_use_text h2 {
+  font: 1.5rem bluu, sans-serif;
+  color: #000000;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.terms_of_use_text .col-lg-12 p {
+  font: 1.08rem sofiapro, sans-serif;
+  padding: 0 1.5rem;
+}
 
 
+/*--------------------------------------------LOG-IN and REGISTER---------------------------------------------*/
 
-/* MEDIA QUERIES FOR MORE RESPONSIVENESS WITH REDUCING SCREEN SIZE */
+.form-container {
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  width: 50%;
+  height: 85%;
+  top: 15%;
+  left: 25%;
+  padding: 5%;
+  border-radius: 2px;
+  box-shadow: 12px 12px 22px rgba(39, 39, 39, 0.801);
+  background-image: linear-gradient(#F9DFAD, #F6B172);
+}
+
+.form-container h1 {
+  color: #4D3548;
+}
+
+.form-container p {
+  font: 1em sofiapro, sans-serif;
+  color: #4D3548;
+}
+
+.form-container label {
+  font: 1em sofiapro, sans-serif;
+  color: #4D3548;
+  text-align: left;
+}
+
+.form-container a {
+  font: 1rem sofiapro, sans-serif;
+  color: rgb(249, 29, 0);
+  text-align: left;
+  padding: 0.4rem;
+}
+
+.form-container a:hover {
+  color: rgb(113, 0, 4);
+  text-decoration: none;
+}
+
+.form-control {
+  background-color: #4D3548;
+  border-color: #3e293a;
+  color: #F9DFAD;
+  border-radius: 2px;
+  margin-top: 10%;
+  justify-content: center;
+  width: 100%;
+  height: 4em;
+}
+
+.form-control:focus {
+  background-color: #C85750;
+  color: #F9DFAD;
+}
+
+::placeholder {
+  font: 1em sofiapro, sans-serif;
+  color: #F9DFAD !important;
+  text-align: center;
+}
+
+/*log in - register button*/
+.btn1 {
+  background-image: linear-gradient(#C85750, #E46842);
+  color: rgb(249, 223, 174);
+  padding: 1.25rem 1rem;
+  margin-top: 0.4rem;
+  border: none;
+  border-radius: 0.3125rem;
+  font: 1rem sofiapro, sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.btn1:hover {
+  color: rgb(85, 36, 78);
+  transform: translateY(-0.125rem);
+  box-shadow: 0rem 0.125rem 0.625rem rgba(0, 0, 0, 0.2);
+}
+
+#login_btnn {
+  padding: 1.25rem 3rem;
+}
+
+#register_btnn {
+  padding: 1.25rem 2.5rem;
+}
+
+/*----------------------------------------------- PERSONAL INFO - APPLICATION FORM --------------------------------------------*/
+
+.form-container2 {
+  text-align: left;
+  position: absolute;
+  width: 70%;
+  height: 90%;
+  top: 15%;
+  left: 15%;
+  padding: 2rem;
+  border-radius: 2px;
+  box-shadow: 12px 12px 22px rgba(39, 39, 39, 0.801);
+  background-image: linear-gradient(#F9DFAD, #F6B172);
+}
+
+.form-container2 h1 {
+  color: #4D3548;
+}
+
+.form-container2 h2 {
+  color: #4D3548;
+  font: 1.7em;
+}
+
+.form-container2 p {
+  font: 0.5em sofiapro, sans-serif;
+}
+
+.form-container2 label {
+  font: 1em sofiapro, sans-serif;
+  color: #4D3548;
+  text-align: left;
+}
+
+.form-control2 {
+  background-color: #4D3548;
+  border-color: #3e293a;
+  color: #F9DFAD;
+  border-radius: 2px;
+  justify-content: center;
+  width: 100%;
+  height: 2em;
+}
+
+.form-control2:focus {
+  background-color: #C85750;
+  color: #F9DFAD;
+}
+
+/* save info button*/
+.btn01 {
+  border: none;
+  outline: none;
+  background-image: linear-gradient(#C85750, #E46842);
+  height: 3em;
+  width: 30%;
+  font: 1.2em sofiapro, sans-serif;
+  color: #F9DFAD;
+  border-radius: 4px;
+}
+
+
+input::file-selector-button {
+  background-color: #C85750;
+  color: #F9DFAD;
+}
+
+
+/*------------------------------APPLICATION FORM  PAYMENT----------------------------------------------------------*/
+.all_application_contents {
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.form-container3 {
+  text-align: center;
+  position: absolute;
+  width: 40%;
+  height: 85%;
+  top: 15%;
+  left: 30%;
+  padding: 2rem;
+  border-radius: 2px;
+  box-shadow: 12px 12px 22px rgba(39, 39, 39, 0.801);
+  background-image: linear-gradient(#F9DFAD, #F6B172);
+}
+
+.form-container3 h1 {
+  color: #4D3548;
+}
+
+.form-container3 p {
+  font: 1.5em sofiapro, sans-serif;
+  color: #4D3548;
+}
+
+.form-container3 label {
+  font: 1.5em sofiapro, sans-serif;
+  color: #4D3548;
+}
+
+.form-control3 {
+  text-align: left;
+  background-color: #4D3548;
+  border-color: #3e293a;
+  color: #F9DFAD;
+  border-radius: 2px;
+  justify-content: center;
+  width: 100%;
+  height: 3em;
+}
+
+/*------------------------------------------------ACCOUNT PAGE------------------------------------*/
+.all_catering_contents,
+.all_events_contents,
+.all_maintenance_contents,
+.all_account_contents {
+  height: 100vh;
+}
+
+.sideaccount {
+  margin-top: 15%;
+  border-radius: 2px;
+  box-shadow: 12px 12px 22px rgba(39, 39, 39, 0.801);
+  background-image: linear-gradient(#F9DFAD, #F6B172);
+  padding: 2rem;
+  height: 90%;
+  width: 100%;
+}
+
+.mainaccount {
+  margin-top: 5%;
+  border-radius: 2px;
+  box-shadow: 12px 12px 22px rgba(39, 39, 39, 0.801);
+  background-image: linear-gradient(#F9DFAD, #F6B172);
+  padding: 2rem;
+  height: 90%;
+  width: 100%
+}
+
+.nav .nav-item {
+  margin-top: 5%;
+  text-align: center;
+  background-color: #4D3548;
+  border-color: #3e293a;
+  border-radius: 2px;
+  width: 100%;
+  height: 100%;
+}
+
+.nav .nav-link1 {
+  color: #F9DFAD !important;
+}
+
+.nav .nav-item a {
+  font: 1.5em sofiapro, sans-serif;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+.sideaccount a {
+  font: 1.5em sofiapro, sans-serif;
+  text-decoration: none;
+  text-align: center;
+}
+
+.sideaccount label {
+  font: 1em sofiapro, sans-serif;
+  color: #4D3548;
+  text-align: left;
+}
+
+
+.mainaccount h1 {
+  color: #4D3548;
+  font: 2.5rem bluu, sans-serif;
+}
+
+.mainaccount h2 {
+  color: #4D3548;
+  font: 1.7em bluu, sans-serif;
+}
+
+.mainaccount p {
+  color: #4D3548;
+  font: 1em sofiapro, sans-serif;
+}
+
+.mainaccount ul li {
+  font: 1em sofiapro, sans-serif;
+  color: #4D3548;
+}
+
+.mainaccount label {
+  font: 1em sofiapro, sans-serif;
+  color: #4D3548;
+  text-align: left;
+}
+
+/*----------------------------------MEDIA QUERIES FOR MORE RESPONSIVENESS WITH REDUCING SCREEN SIZE----------------------------------*/
 @media screen and (max-width: 1220px) {
 
   /* NAVIGATION BAR */
@@ -711,7 +1261,8 @@ footer {
     padding: 0.9rem 2rem;
   }
 
-  /* LOCATION PAGE */
+
+  /*--------LOCATION PAGE------------*/
 
   .text_contents {
     height: 29rem;
@@ -777,7 +1328,12 @@ footer {
 
 }
 
+
 @media screen and (max-width: 991px) {
+
+  #language_dropdown {
+    margin-left: 0;
+  }
 
   #location_contents .col-lg-4 h1 {
     font-size: 1.2rem;
@@ -835,7 +1391,7 @@ footer {
   }
 
   .email_address a {
-    font-size: 0.8rem;
+    font-size: 0.78rem;
   }
 
   /* GET LOCATION BUTTON */
@@ -890,7 +1446,7 @@ footer {
   }
 
   .email_address .textual_email {
-    padding: 0 5px;
+    padding: 0;
   }
 
   .email_address .textual_email a {
@@ -898,6 +1454,7 @@ footer {
   }
 
 
+  /*-------------HISTORY SECTION---------------*/
 
   .carousel-caption h2 {
     font-size: 1.2rem;
@@ -910,168 +1467,11 @@ footer {
     padding: 0.1rem 0 0.4rem 0;
     margin: 0;
   }
-
 }
-
-
-
-/*------------------------------------laundry----------------------------------------*/
-
-
-.top-up-icons {
-  width: 10%;
-  height: 10%;
-  margin-left:15%;
-}
-
-.form-container3 {
-  position: absolute;
-  width: 50%;
-  height: 90%;
-  top: 15%;
-  left: 25%;
-  padding:2%;
-  border-radius: 2px;
-  box-shadow: 12px 12px 22px rgba(39, 39, 39, 0.801);
-  background-image: linear-gradient(#F9DFAD, #F6B172);
-}
-
-.form-container3 h1 {
-  text-align: center;
-  color: #4D3548;
-  font-family: bluu,;
-}
-
-.form-container3 p {
-  font-family: sofiapro, sans-serif;
-  font-size: 1.2em;
-}
-
-
-.form-control {
-  background-color: #4D3548;
-  border-color: #4D3548;
-  color: #F9DFAD;
-  border-radius: 2px;
-  margin-top: 10%;
-  justify-content: center;
-  width: 100%;
-  height: 4em;
-}
-
-.form-control:focus {
-  background-color: #C85750;
-  color: #F9DFAD;
-}
-
-.btn2 {
-  /* border: none;
-  outline: none; */
-  background-image: linear-gradient(#C85750, #E46842);
-  height: 2.5em;
-  width: 70%;
-  font: 1em sofiapro, sans-serif;
-  color: #F9DFAD;
-  border-radius: 4px;
-
-}
-
-.btn2:hover {
-  background-image: linear-gradient(#ae3830, #de5f38);
-  border-color: white;
-  color: #F6B172;
-}
-
-
-.laundry-container{
- margin-left:1.5rem;
-} 
-
-.text-container{
-  width:60%;
-  margin-left:20%;
-  margin-right:20%;
-}
-
-.d-block-laundry {
-width:65%;
-margin-left:20%;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-width:15%;
-}
-
-/*-----------------------------------------study room --------------------------*/
-
-
-.study-container {
-  margin-top: 1%;
-}
-
-
-
-.card-study, .card-laundry, .card-gym {
-  background-color:  #F6B172;
-  width:75%;
-  margin-top:1%;
-  margin-left:8%;
-
-}
-
-.card-text-study, .card-text-laundry,.card-text-gym {
-  font: 1.2em bluu, sans-serif;
-  color: rgb(59, 36, 56);
-  text-align: center;
-}
-
-#studyRoomIcon {
-  width: 8%;
-  height: 8%;
-}
-
-
-.d-block-study{
-  width:80%;
-  margin-left:10%;
-}
-
-/*------------------------------------------gym----------------------------*/
-.gym-container{
-  margin-top: 1%;
-  justify-content: center;
-  height:100%;
-}
-
-.d-block-gym {
-  margin-top:2rem;
-  width:100%;
-}
-
-.mediacontainer{
-padding:2.5rem;
-margin-left:10%;
-}
-
-
-video{
-  margin-top:2%;
-}
-
-
-.download-video{
-  font-family: sofiapro, sans-serif;
-  font-size:1rem;
-  color: #F9DFAD;
-  text-align: center;
-}
-
-
 
 @media screen and (max-width: 850px) {
 
-  /* Navigation bar */
+  /*-------------Navigation bar-------------*/
   #language_dropdown {
     margin-left: 0;
   }
@@ -1094,11 +1494,11 @@ video{
     padding: 0.9rem 2rem;
   }
 
-  /* LOCATION PAGE */
+  /*--------------LOCATION PAGE--------------*/
 
   #location_contents .first_row {
     align-items: center;
-    height: 50rem;
+    height: 60rem;
   }
 
   #location_contents .col-lg-4 h1 {
@@ -1155,64 +1555,7 @@ video{
     font: 0.9rem bluu, sans-serif;
   }
 
-  /* Some extra modifications to adjust the location menu */
-  .text_contents {
-    padding: 0.5rem;
-    height: 25rem;
-  }
-
-  .map iframe {
-    width: 100%;
-    height: 25rem;
-  }
-
-  #location_contents .col-lg-4 h1 {
-    padding: 0.4rem;
-  }
-
-  #location_contents .address {
-    margin-top: 2.2rem;
-  }
-
-  .address .postal_address {
-    padding: 0 5px;
-  }
-
-  .address .textual_address {
-    padding: 0 5px;
-  }
-
-  .address .textual_address p {
-    margin-left: 10px;
-  }
-
-  .contact_number .phone_number {
-    padding: 0 5px;
-    text-align: center;
-  }
-
-  .contact_number .numerical_digits {
-    padding: 0 5px;
-  }
-
-  .contact_number .numerical_digits a {
-    margin-left: 10px;
-  }
-
-  .email_address .email_text {
-    padding: 0 5px;
-    text-align: center;
-  }
-
-  .email_address .textual_email {
-    padding: 0 5px;
-  }
-
-  .email_address .textual_email a {
-    margin-left: 0px;
-  }
-
-  /* -------------------------HISTORY SECTION------------------------------------ */
+  /* HISTORY SECTION */
 
   .carousel-caption h2 {
     font-size: 1rem;
@@ -1223,6 +1566,12 @@ video{
     font-size: 0.8rem;
     padding: 0.1rem 0 0.4rem 0;
   }
+
+  /* FAQs */
+  .all_accordions {
+    margin: 6rem 0;
+  }
+
 
 }
 
@@ -1292,8 +1641,8 @@ video{
   }
 
   .contact_number a {
-    font-size: 0.9rem;
-    font-weight: normal;
+    font-size: 0.8rem;
+    color: rgb(154, 19, 1);
   }
 
   .numerical_digits {
@@ -1316,6 +1665,7 @@ video{
   .email_address a {
     font-size: 0.9rem;
     font-weight: normal;
+    color: rgb(154, 19, 1);
   }
 
   .email_address .textual_email {
@@ -1330,11 +1680,11 @@ video{
     font: 0.9rem bluu, sans-serif;
   }
 
-  /* -------------------------HISTORY SECTION------------------------------------ */
+  /* HISTORY SECTION */
 
   .carousel-caption h2 {
     font-size: 0.9rem;
-    padding: 0.2 0;
+    padding: 0.2rem 0;
   }
 
   .carousel-caption p {
@@ -1378,7 +1728,7 @@ video{
     padding: 0.9rem 2rem;
   }
 
-  /* -------------------------HISTORY SECTION------------------------------------ */
+  /* HISTORY SECTION */
 
   .carousel-caption h2 {
     font-size: 0.7rem;
@@ -1390,7 +1740,6 @@ video{
 
   .carousel-caption {
     top: 90%;
-
   }
 }
 
@@ -1429,7 +1778,6 @@ video{
     padding: 0.9rem 2rem;
   }
 
-
   /* -------------------------HISTORY SECTION------------------------------------ */
 
   .carousel-caption h2 {
@@ -1439,5 +1787,13 @@ video{
 
   .all_hogwarts_images {
     width: 100%;
+  }
+}
+
+/* Responsive layout - set the width of the room squares to 100% on small screens */
+@media screen and (max-width: 600px) {
+  .square {
+    width: 100%;
+    padding-top: 100%;
   }
 }

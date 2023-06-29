@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOGWARTS HAVEN | STUDIO </title>
+  <link rel="icon" href="pictures/logo.png">
+  <meta name="description" content="Check out our studios!">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--Custom css mentioned after boostrap css to overwrite some of it's features-->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <!--Css to inculcate third-party features of custom icons from font-awesome-->
+</head>
+
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <div class="wrap-1">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-lg">
+        <a class="navbar-brand" href="homepage.html" title="homepage"><img src="pictures/logo/logo.png"
+            class="brand logo" alt="brand logo" height="30"></a>
+        <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fa-solid fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <!-- ROOMS -->
+            <li class="nav-item">
+              <a class="nav-link" id="location_highlight" href="room.html">Rooms</a>
+            </li>
+            <!-- FACILITIES -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="facilities_dropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Facilities</a>
+              <ul class="dropdown-menu" aria-labelledby="facilities_dropdown">
+                <li>
+                  <a class="dropdown-item" href="facility_laundry.html"><img src="pictures/laundry_gym/lilsock.png"
+                      alt="laundry icon" height="20">&nbsp;Laundry</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="facility_studyRoom.html"><img src="pictures/laundry_gym/studyroom1.png"
+                      alt="studyroom icon" height="20">&nbsp;Study Rooms</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="facility_gym.html"><img src="pictures/laundry_gym/gym3.png"
+                      alt="gym icon" height="20">&nbsp;Gym</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- LOCATION -->
+            <li class="nav-item">
+              <a class="nav-link" href="location.html">Location</a>
+            </li>
+            <!-- HISTORY -->
+            <li class="nav-item">
+              <a class="nav-link" href="about_us.html">History</a>
+            </li>
+            <!-- FAQs -->
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQs</a>
+            </li>
+            <!-- REGISTER -->
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">Register</a>
+            </li>
+            <!-- LOGIN -->
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <!-- LANGUAGE -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false"><img src="pictures/language_icons/bb.png" class="english_lang" alt="british flag"
+                  width="20" height="20">&nbsp;Eng</a>
+              <ul class="dropdown-menu" aria-labelledby="languageDropdown" id="language_dropdown">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="pictures/language_icons/china.png" class="chinese_lang" alt="chinese flag"
+                      height="20">&nbsp;Chinese</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="pictures/language_icons/spanish.png" class="spanish_lang" alt="spanish flag"
+                      height="20">&nbsp;Spanish</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="pictures/language_icons/french.png" class="french_lang" alt="french flag"
+                      height="20">&nbsp;French</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"><img src="pictures/language_icons/german.png" class="german_lang"
+                      alt="german flag" height="20">&nbsp;German</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- MAIN -->
+  <div class="wrap-2">
+    <!-- STUDIO ROOM -->
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="text-center history_heading">Studio</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-lg all_hogwarts_images">
+      <div class="row">
+        <div class="col-lg-12 ">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade ">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="pictures/room_pictures/studioA1.jpg" class="d-block w-100" alt="front view of the building">
+              </div>
+              <div class="carousel-item">
+                <img src="pictures/room_pictures/studioB1.jpg" class="d-block w-100" alt="reception area">
+              </div>
+              <div class="carousel-item">
+                <img src="pictures/room_pictures/studioA2.jpg" class="d-block w-100" alt="rooms aerial view">
+              </div>
+              <div class="carousel-item">
+                <img src="pictures/room_pictures/studioA3.jpg" class="d-block w-100" alt="study room">
+              </div>
+              <div class="carousel-item">
+                <img src="pictures/room_pictures/studioB2.jpg" class="d-block w-100" alt="common room">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="container-lg all_history_text">
+    <div class="row history_text">
+      <div class="col-lg-12 col-md-12">
+        <p>Live in style with our luxurious Studio rooms! These rooms are perfect for those who want a little extra
+          space to stretch out and relax. With a private balcony, kitchenette, and private bathroom, you'll have
+          everything you need to feel at home. The vintage furniture and high ceilings add a touch of classic
+          elegance,
+          while the modern amenities ensure you're comfortable and connected. The sofa and TV are perfect for movie
+          nights or chilling with friends, and you'll love having your own private retreat.</p>
+        <p><b>What's included in your Studio plan?</b><br>
+          You will have everything you need in your studio.<br>
+          - Spacious kitchenette with modern amenities such as a double door refridgerator, combination
+          stovetop/oven/microwave<br>
+          - Mini dining area<br>
+          - Vintage furniture: desk and chair, dresser, standing mirror, double bed, bookshelf, armchair sofa and
+          TV<br>
+          - Spacious private bathroom featuring clawfoot tub<br>
+          - Large private balcony (included in select studios)<br>
+          - Gym and laundry room access</p>
+
+        <p><b>Our Studio rooms start at €1200 with bills included.</b></p>
+
+        <p>Looking for a wheelchair accessible room? Or a pet friendly one? Or are you interested in a meal plan?
+          Configure these options once you start your application.</p>
+        <p>Hogwarts has been around for hundreds of years, as has its dormitories. This means each room is unique in
+          its
+          furniture and layout. No two rooms are the same.</p>
+        <br>
+        <p><a href="location.html"> Contact us </a>to arrange a viewing.</p>
+      </div>
+
+      <!--back button-->
+      <div class="row">
+        <div class="col-8"></div>
+
+        <div class="all_buttons col-2">
+          <a href="room.html">
+            <div class="btn10 mt-3 mb-5">Room types</div>
+          </a>
+        </div>
+
+        <!--book now button-->
+        <div class="all_buttons col-2">
+          <a href="application.html">
+            <div class="btn10 mt-3 mb-5">Book Now</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI CHATBOT -->
+  <div id="chatbot-icon" tabindex="0">
+    <span class="dot"></span>
+    <span class="fa-solid fa-message" id="message_icon">
+      <span class="text">Chat</span>
+    </span>
+  </div>
+  <div id="chatbot-container">
+    <div id="chatbot-header">
+      <span class="fa-solid fa-xmark" id="cross"></span>
+      <div id="magical_messenger">Magical Messenger</div>
+    </div>
+    <div id="chatbot-body">
+      <div class="welcome">
+        <p>Welcome to Hogwarts Haven!</p>
+        <p>
+          I am the Magical messenger and can answer most of your questions
+        </p>
+        <p>How can I help you today?</p>
+      </div>
+    </div>
+    <div id="chatbot-footer">
+      <label for="chatbot-input" class="ai_label">.</label>
+      <input type="text" id="chatbot-input" placeholder="Start a conversation...">
+      <button id="chatbot-send">
+        <span class="chat_button_text">.</span>
+        <span class="fa-solid fa-paper-plane"></span>
+      </button>
+    </div>
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container-lg" id="footer_contents">
+      <div class="row">
+        <div class="col-lg-4 text-lg-start text-center">
+          <p id="contact"><a href="location.html">Contact us</a></p>
+        </div>
+        <div class="col-lg-4 text-lg-center text-center">
+          <ul class="list-unstyled list-inline" id="media_icons">
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/havenathgwarts/" title="instagram account" target="_blank"><i
+                  class="fab fa-instagram fa-lg"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://twitter.com/HavenAtHogwarts" title="twitter account" target="_blank"><i
+                  class="fab fa-twitter fa-lg"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 text-lg-end text-center">
+          <ul class="list-unstyled" id="legal">
+            <li><a href="accessibility.html">Accessibility</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; 2023 Hogwarts Haven. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!--BOOTSTRAP JAVASCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
